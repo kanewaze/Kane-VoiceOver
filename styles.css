@@ -1,31 +1,87 @@
-/* CSS File: styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Cairo', sans-serif;
+    background-color: #f0f0f0;
     text-align: center;
-    margin: 50px;
-    background-color: #121212;
-    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
+
 .container {
-    background: #1e1e1e;
+    width: 90%;
+    max-width: 400px;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-input {
-    padding: 10px;
-    margin: 10px;
+
+.profile-card, .price-card, .demo-card {
+    background: white;
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #0033cc;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+h3 {
     font-size: 16px;
-    background: #333;
-    color: white;
-    border: 1px solid #555;
+    color: #0033cc;
+    margin-bottom: 10px;
+}
+
+.icon svg {
+    width: 28px;
+    height: 28px;
+    fill: #0033cc;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon:hover svg {
+    transform: scale(1.1);
+}
+
+.price-card input {
+    width: 90%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
 }
-input:focus {
-    outline: none;
-    border-color: #777;
+
+.voice-sample {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #f9f9f9;
 }
-h1, h2, h3 {
-    color: #fff;
+
+audio {
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 5px;
 }

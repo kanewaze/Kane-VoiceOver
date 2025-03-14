@@ -1,19 +1,35 @@
-/* JavaScript File: script.js */
-function calculatePrice() {
-    let duration = document.getElementById('duration').value;
-    let pricePer30Sec = document.getElementById('pricePer30Sec').value;
-    let dollarToEgp = 50;
-    let priceInDollars = (duration / 30) * pricePer30Sec;
-    let priceInEgp = priceInDollars * dollarToEgp;
-    document.getElementById('result').innerText = `التكلفة: ${priceInDollars.toFixed(2)} دولار (${priceInEgp.toFixed(2)} جنيه)`;
-}
+document.addEventListener("DOMContentLoaded", function () {
+    const ratePer30SecInput = document.getElementById("ratePer30Sec");
+    const durationSecInput = document.getElementById("durationSec");
+    const durationMinInput = document.getElementById("durationMin");
+    const priceUSD = document.getElementById("priceUSD");
+    const priceEGP = document.getElementById("priceEGP");
 
-function syncMinutes() {
-    let seconds = document.getElementById('duration').value;
-    document.getElementById('durationMin').value = (seconds / 60).toFixed(2);
-}
+    const exchangeRate = 50;
 
-function syncSeconds() {
-    let minutes = document.getElementById('durationMin').value;
-    document.getElementById('duration').value = Math.round(minutes * 60);
-}
+    function calculatePrice() {
+        let ratePer30Sec = parseFloat(ratePer30SecInput.value);
+        let durationSec = parseFloat(durationSecInput.value);
+
+        if (isNaN(ratePer30Sec) || isNaN(durationSec) || durationSec <= 0) {
+            priceUSD.textContent = "0";
+            priceEGP.textContent = "0";
+            return;
+        }
+
+        let priceInUSD = (durationSec / 30) * ratePer30Sec;
+        let priceInEGP = priceInUSD * exchangeRate;
+
+        priceUSD.textContent = priceInUSD.toFixed(2);
+        priceEGP.textContent = priceInEGP.toFixed(2);
+    }
+
+    ratePer30SecInput.addEventListener("input", calculatePrice);
+    durationSecInput.addEventListener("input", calculatePrice);
+    durationMinInput.addEventListener("input", function () {
+        durationSecInput.value = durationMinInput.value * 60;
+        calculatePrice();
+    });
+
+    calculatePrice();
+});

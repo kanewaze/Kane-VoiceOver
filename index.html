@@ -1,27 +1,69 @@
-<!-- HTML File: index.html -->
 <!DOCTYPE html>
 <html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>حساب تكلفة الفويس أوفر</title>
+    <title>Mahmoud Kane - Voice Over</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Mahmoud Kane For Voice Over</h1>
-        <h2>حساب تكلفة الفويس أوفر</h2>
-        <label for="duration">مدة التسجيل (بالثواني):</label>
-        <input type="number" id="duration" value="30" oninput="syncMinutes(); calculatePrice();">
-        <br>
-        <label for="durationMin">مدة التسجيل (بالدقائق):</label>
-        <input type="number" id="durationMin" value="0.5" step="0.1" oninput="syncSeconds(); calculatePrice();">
-        <br>
-        <label for="pricePer30Sec">سعر كل 30 ثانية (بالدولار):</label>
-        <input type="number" id="pricePer30Sec" value="10" step="0.1" oninput="calculatePrice();">
-        <br>
-        <h3 id="result"></h3>
+        <!-- بطاقة البروفايل -->
+        <div class="profile-card">
+            <img class="profile-img" src="https://i.postimg.cc/yY4gfHFJ/475417232-1092024209600964-7858003383924407508-n.jpg" alt="Mahmoud Kane">
+            <h2>Mahmoud Kane</h2>
+            <p class="job-title">Professional Voice Over</p>
+
+            <!-- أيقونة Instagram -->
+            <a href="https://www.instagram.com/kanewaze/" target="_blank" class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                    <path fill="#0033cc" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"/>
+                </svg>
+            </a>
+        </div>
+
+        <!-- كارت حساب تكلفة الفويس أوفر -->
+        <div class="price-card">
+            <h2>حساب تكلفة</h2>
+            <h3>Voice Over</h3>
+
+            <label>سعر كل 30 ثانية (بالدولار):</label>
+            <input type="number" id="ratePer30Sec" value="10" step="0.1">
+
+            <label>المدة (بالثواني):</label>
+            <input type="number" id="durationSec" value="30">
+
+            <label>المدة (بالدقائق):</label>
+            <input type="number" id="durationMin" value="0.5" step="0.1">
+
+            <p>💰 السعر بالدولار: <span id="priceUSD">10</span> $</p>
+            <p>💵 السعر بالجنيه المصري: <span id="priceEGP">500</span> جنيه</p>
+        </div>
+
+        <!-- كارت عينات الصوت -->
+        <div class="demo-card">
+            <h2>عينات الصوت</h2>
+
+            <div class="voice-sample">
+                <h3>🎙️ Commercial Voice Over</h3>
+                <audio controls>
+                    <source src="voice_samples/commercial.mp3" type="audio/mpeg">
+                    متصفحك لا يدعم تشغيل الصوت.
+                </audio>
+            </div>
+
+            <div class="voice-sample">
+                <h3>🎧 Documentary Voice Over</h3>
+                <audio controls>
+                    <source src="voice_samples/documentary.mp3" type="audio/mpeg">
+                    متصفحك لا يدعم تشغيل الصوت.
+                </audio>
+            </div>
+
+        </div>
+
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
