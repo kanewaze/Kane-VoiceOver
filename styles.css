@@ -61,24 +61,24 @@ body {
 
 /* صورة البروفايل */
 .profile-img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 5px;
+    margin-bottom: -20px;
 }
 
 /* العناوين */
 h2 {
     color: #0033cc;
-    font-size: 20px;
-    margin-bottom: 5px;
+    font-size: 30px;
+    margin-bottom: -20px;
 }
 
 h3 {
-    font-size: 16px;
+    font-size: 28px;
     color: #0033cc;
-    margin-bottom: 10px;
+    margin-bottom: -5px;
 }
 
 /* أيقونة Instagram */
@@ -96,19 +96,38 @@ h3 {
 /* حقول الإدخال في كارت الأسعار */
 .price-card input {
     width: 90%;
-    padding: 8px;
+    padding: 12px; /* زيادة المساحة الداخلية */
     margin-top: 5px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 25px; /* حواف دائرية بشكل أكبر */
     text-align: center;
     font-size: 16px;
     direction: rtl; /* النصوص من اليمين إلى اليسار */
+    background-color: #f5f5f5; /* خلفية داكنة قليلاً */
+    outline: none; /* إزالة الحدود الزرقاء عند التحديد */
+    transition: background-color 0.3s, border-color 0.3s;
 }
 
-/* عينات الصوت */
-.voice-sample {
-    padding: 0px;
+.price-card input:focus {
+    border-color: #0033cc; /* لون الحدود عند التركيز */
+    background-color: #e0e0e0; /* خلفية داكنة أكثر عند التركيز */
 }
+
+/* تحسين عرض السعر */
+.price-card p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* أيقونة الفلوس بجانب السعر بالجنيه المصري */
+.money-icon {
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+
 
 audio {
     width: 100%;
@@ -134,4 +153,15 @@ audio {
 .dark-mode .dark-mode-btn {
     background: yellow;
     color: black;
+}
+
+.dark-mode .price-card input {
+    background-color: #444; /* خلفية داكنة في الوضع الليلي */
+    color: white; /* لون النص في الوضع الليلي */
+    border-color: #666; /* لون الحدود في الوضع الليلي */
+}
+
+.dark-mode .price-card input:focus {
+    background-color: #555; /* خلفية داكنة أكثر عند التركيز في الوضع الليلي */
+    border-color: #66aaff; /* لون الحدود عند التركيز في الوضع الليلي */
 }
