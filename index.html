@@ -10,6 +10,9 @@
     <div class="container">
         <!-- بطاقة البروفايل -->
         <div class="profile-card">
+            <!-- زر التبديل بين الوضع الليلي والفاتح -->
+            <button id="darkModeToggle" class="dark-mode-btn">🌙</button>
+
             <img class="profile-img" src="https://i.postimg.cc/yY4gfHFJ/475417232-1092024209600964-7858003383924407508-n.jpg" alt="Mahmoud Kane">
             <h2>Mahmoud Kane</h2>
             <p class="job-title">Professional Voice Over</p>
@@ -36,8 +39,8 @@
             <label>المدة (بالدقائق):</label>
             <input type="number" id="durationMin" value="0.5" step="0.1">
 
-            <p>💰 السعر بالدولار: <span id="priceUSD">10</span> $</p>
-            <p>💵 السعر بالجنيه المصري: <span id="priceEGP">500</span> جنيه</p>
+            <p> السعر بالدولار: <span id="priceUSD">10</span> $💰</p>
+            <p>السعر بالجنيه المصري: <span id="priceEGP">500</span> جنيه💵 </p>
         </div>
 
         <!-- كارت عينات الصوت -->
@@ -59,9 +62,7 @@
                     متصفحك لا يدعم تشغيل الصوت.
                 </audio>
             </div>
-
         </div>
-
     </div>
 
     <script src="script.js"></script>
