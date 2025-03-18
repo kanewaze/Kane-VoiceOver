@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
 
-/* تنسيقات عامة */
+/* 🔹 تنسيقات عامة */
 body {
     font-family: 'Cairo', sans-serif;
     background-color: #f0f0f0;
@@ -15,7 +15,7 @@ body {
     direction: rtl; /* النصوص من اليمين إلى اليسار */
 }
 
-/* تنسيق الحاوية الرئيسية */
+/* 🔹 الحاوية الرئيسية */
 .container {
     width: 90%;
     max-width: 400px;
@@ -26,8 +26,8 @@ body {
     gap: 20px; /* مسافة بين الكروت */
 }
 
-/* تنسيقات الكروت */
-.profile-card, .price-card, .demo-card {
+/* 🔹 تنسيق الكروت */
+.profile-card, .price-card, .demo-card, .vodafone-card {
     background: white;
     width: 100%;
     max-width: 350px;
@@ -35,15 +35,15 @@ body {
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
-    position: relative; /* لجعل الزر يظهر بشكل صحيح */
-    direction: rtl; /* النصوص من اليمين إلى اليسار */
+    position: relative;
+    direction: rtl;
 }
 
-/* زر التبديل بين الوضع الليلي والفاتح */
+/* 🔹 زر التبديل بين الوضع الليلي والفاتح */
 .dark-mode-btn {
     position: absolute;
     top: 10px;
-    right: 10px; /* وضع الزر في الجانب الأيمن */
+    right: 10px;
     background: #0033cc;
     color: white;
     border: none;
@@ -59,7 +59,7 @@ body {
     transform: scale(1.1);
 }
 
-/* صورة البروفايل */
+/* 🔹 صورة البروفايل */
 .profile-img {
     width: 150px;
     height: 150px;
@@ -68,7 +68,7 @@ body {
     margin-bottom: -20px;
 }
 
-/* العناوين */
+/* 🔹 العناوين */
 h2 {
     color: #0033cc;
     font-size: 30px;
@@ -81,7 +81,7 @@ h3 {
     margin-bottom: -5px;
 }
 
-/* أيقونة Instagram */
+/* 🔹 أيقونة Instagram */
 .icon svg {
     width: 28px;
     height: 28px;
@@ -93,27 +93,27 @@ h3 {
     transform: scale(1.1);
 }
 
-/* حقول الإدخال في كارت الأسعار */
+/* 🔹 حقول الإدخال في كارت الأسعار */
 .price-card input {
     width: 90%;
-    padding: 12px; /* زيادة المساحة الداخلية */
+    padding: 12px;
     margin-top: 5px;
     border: 1px solid #ccc;
-    border-radius: 25px; /* حواف دائرية بشكل أكبر */
+    border-radius: 25px;
     text-align: center;
     font-size: 16px;
-    direction: rtl; /* النصوص من اليمين إلى اليسار */
-    background-color: #f5f5f5; /* خلفية داكنة قليلاً */
-    outline: none; /* إزالة الحدود الزرقاء عند التحديد */
+    direction: rtl;
+    background-color: #f5f5f5;
+    outline: none;
     transition: background-color 0.3s, border-color 0.3s;
 }
 
 .price-card input:focus {
-    border-color: #0033cc; /* لون الحدود عند التركيز */
-    background-color: #e0e0e0; /* خلفية داكنة أكثر عند التركيز */
+    border-color: #0033cc;
+    background-color: #e0e0e0;
 }
 
-/* تحسين عرض السعر */
+/* 🔹 تحسين عرض السعر */
 .price-card p {
     font-size: 16px;
     font-weight: bold;
@@ -121,27 +121,23 @@ h3 {
     text-align: center;
 }
 
-/* أيقونة الفلوس بجانب السعر بالجنيه المصري */
-.money-icon {
-    font-size: 18px;
-    margin-left: 5px;
-}
-
-
-
+/* 🔹 مشغل الصوت */
 audio {
     width: 100%;
     margin-top: 5px;
     border-radius: 5px;
 }
 
-/* الوضع الليلي */
+/* 🔹 الوضع الليلي */
 .dark-mode {
     background-color: #222;
     color: white;
 }
 
-.dark-mode .profile-card, .dark-mode .price-card, .dark-mode .demo-card {
+.dark-mode .profile-card, 
+.dark-mode .price-card, 
+.dark-mode .demo-card, 
+.dark-mode .vodafone-card {
     background: #333;
     border-color: #444;
 }
@@ -156,12 +152,73 @@ audio {
 }
 
 .dark-mode .price-card input {
-    background-color: #444; /* خلفية داكنة في الوضع الليلي */
-    color: white; /* لون النص في الوضع الليلي */
-    border-color: #666; /* لون الحدود في الوضع الليلي */
+    background-color: #444;
+    color: white;
+    border-color: #666;
 }
 
 .dark-mode .price-card input:focus {
-    background-color: #555; /* خلفية داكنة أكثر عند التركيز في الوضع الليلي */
-    border-color: #66aaff; /* لون الحدود عند التركيز في الوضع الليلي */
+    background-color: #555;
+    border-color: #66aaff;
+}
+
+
+/* تصميم كارت Vodafone Cash */
+.vodafone-card {
+    background: white; /* الخلفية بيضاء للوضع الفاتح */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* ظل أخف للوضع الفاتح */
+    max-width: 355px;
+    width: 100%;
+    border: 2px solid #e60000; /* الحدود حمراء */
+    flex-direction: row; /* جعل العناصر في صف */
+}
+
+/* تحسين ترتيب المحتوى داخل البطاقة */
+.vodafone-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: -31px;
+    margin-left: -10px;
+}
+
+/* تنسيق العنوان */
+.vodafone-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #e60000; /* اللون الأحمر */
+    text-align: right;
+    margin: 10px 70px 0px -20px;
+}
+
+/* زر النسخ */
+.copy-btn {
+    background: #e60000; /* الخلفية حمراء */
+    color: white; /* النص أبيض */
+    border: none;
+    padding: 10px;
+    font-size: 19px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.copy-btn:hover {
+    background: #cc0000; /* لون أحمر داكن عند التمرير */
+}
+
+/* صورة Vodafone Cash */
+.vodafone-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-left: 10px; /* مسافة بين الصورة والمحتوى */
 }
