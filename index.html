@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f4f4fa">
+<meta name="description" content="لقطة، مساحة عربية لتعلّم المونتاج خطوة بخطوة، مع مختبر للإشارات البصرية ومكتبة فيديو.">
+<title>لقطة — مختبر التعلّم النانوي</title>
+<link rel="preconnect" href="https://i.vimeocdn.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&amp;display=swap" media="print" onload="this.media='all'">
+<style>
+:root{color-scheme:light;--bg:#f3f4fa;--ink:#1c1935;--muted:#555470;--purple:#5b36bc;--accent:#613bca;--tint:#ece5ff;--glass:#ffffffa8;--paper:#fff;--line:#28204b19;--shadow:0 12px 35px #30245d13;--hero:linear-gradient(116deg,#cfdeff 0%,#e7ddff 54%,#f1e8ff 100%);--control:#f5f2ff;--green:#127253;--focus:#7048e9}
+[data-theme=dark]{color-scheme:dark;--bg:#10101b;--ink:#f4eeff;--muted:#c0b9d4;--purple:#c5abff;--accent:#623dcc;--tint:#33254e;--glass:#1d1b2ccf;--paper:#201e31;--line:#e5d5ff27;--shadow:0 12px 35px #05051050;--hero:linear-gradient(116deg,#252e58,#33234d 57%,#24203a);--control:#29243e;--green:#7fe3be;--focus:#c19fff}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 15% 2%,#8166e71a,transparent 46%),var(--bg);color:var(--ink);font:400 15px/1.62 "IBM Plex Sans Arabic",Tahoma,Arial,sans-serif;min-height:100vh}
+button,input,select{font:inherit}button,a,input,select{ -webkit-tap-highlight-color:transparent }button{cursor:pointer}a{color:var(--purple)}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+[hidden]{display:none!important}h1,h2,h3,p{margin:0}h1,h2,h3{line-height:1.27}button:disabled{opacity:.45;cursor:default}.ic{width:19px;height:19px;flex:none;vertical-align:middle}.wrap{width:min(1280px,calc(100% - 72px));margin-inline:auto}.glass{background:var(--glass);border:1px solid var(--line);box-shadow:var(--shadow),inset 0 1px 0 #ffffff40;backdrop-filter:blur(24px) saturate(145%)}.skip{position:fixed;top:8px;right:8px;z-index:10;background:var(--paper);padding:8px;transform:translateY(-180%)}.skip:focus{transform:none}
+.top{min-height:87px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:15px}.brand{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;width:max-content}.brand-mark{display:grid;place-items:center;width:44px;height:44px;border-radius:15px;background:linear-gradient(145deg,#aa86ff,#6039c5 70%);box-shadow:inset 0 1px 1px #fff9,0 5px 13px #683cd746;color:white}.brand-mark .ic{width:24px;height:24px}.brand-name{font-size:24px;font-weight:700;line-height:1.05;display:block}.brand small{color:var(--muted);font-size:10px;letter-spacing:1.6px;display:block;margin-top:5px;font-weight:700;direction:ltr}
+.nav{display:flex;gap:3px;border-radius:999px;padding:4px}.nav button,.icon-btn,.outline,.pill,.primary{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:999px;color:var(--ink);background:transparent;white-space:nowrap;font-weight:600;min-height:40px;padding:8px 14px;text-decoration:none}.nav button[aria-current=page]{background:var(--tint);color:var(--purple)}.nav button:hover,.icon-btn:hover,.outline:hover,.pill:hover{background:var(--tint)}.top-actions{justify-self:end;display:flex;align-items:center;gap:9px}.icon-btn{width:42px;height:42px;padding:0;flex:none}.top-actions .icon-btn,.outline,.pill{border:1px solid var(--line);background:var(--glass)}.avatar{width:39px;height:39px;display:grid;place-items:center;border-radius:50%;color:var(--purple);font-weight:700;background:var(--tint);border:1px solid var(--line)}
+.hero{position:relative;isolation:isolate;display:grid;grid-template-columns:1.1fr 1fr;min-height:284px;overflow:hidden;border-radius:32px;background:var(--hero);border:1px solid #ffffff6b;box-shadow:var(--shadow),inset 0 1px 0 #fff9}.hero-copy{position:relative;z-index:1;align-self:center;padding:31px 39px}.kicker{display:inline-flex;align-items:center;gap:7px;font-size:12px;letter-spacing:.25px;color:var(--purple);font-weight:700}.hero .kicker{border:1px solid var(--line);border-radius:999px;background:var(--glass);padding:4px 11px}.hero h1{font-size:clamp(37px,4.6vw,67px);letter-spacing:-1.7px;margin:11px 0 9px}.hero h1 span{color:var(--purple)}.hero p{color:var(--muted);font-size:16px;max-width:440px}.actions{display:flex;align-items:center;flex-wrap:wrap;gap:9px;margin-top:20px}.primary{background:var(--accent);color:white;box-shadow:inset 0 1px 0 #fff5,0 5px 14px #5833b635;padding-inline:18px}.primary:hover{filter:brightness(1.13)}.primary .ic,.outline .ic{width:17px;height:17px}.hero-art{position:relative;min-height:215px;direction:ltr;pointer-events:none}.orbit{position:absolute;width:390px;height:390px;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%;border:1px solid #fff8;box-shadow:0 0 0 31px #ffffff16,0 0 0 66px #ffffff15,0 0 0 103px #ffffff11;background:radial-gradient(ellipse at 45% 45%,#9b6bfc51,transparent 66%)}.reel{position:absolute;overflow:hidden;left:50%;top:50%;width:218px;height:146px;border:2px solid #ffffffc7;border-radius:20px;background:linear-gradient(140deg,#6550aa,#1f1c45);box-shadow:0 16px 33px #21164742,inset 0 0 14px #ffffff22}.reel img{width:100%;height:100%;object-fit:cover;opacity:.88}.reel.r1{transform:translate(-81%,-61%) rotate(-14deg) scale(.82)}.reel.r2{transform:translate(-13%,-42%) rotate(17deg) scale(.82)}.reel.r3{transform:translate(-50%,-54%) rotate(-6deg)}.reel.r3:after{content:"";position:absolute;inset:0;background:linear-gradient(15deg,#18132a90,transparent 65%)}.reel-play{position:absolute;inset:0;display:grid;place-items:center;color:#fff;z-index:1}.reel-play i{width:53px;height:53px;border-radius:50%;display:grid;place-items:center;background:#ffffff3d;border:1px solid #ffffff88;backdrop-filter:blur(8px)}.sticker{position:absolute;left:50%;top:50%;display:flex;align-items:center;gap:6px;padding:8px 12px;border:1px solid #fff8;border-radius:14px;background:#fff8;color:#372169;box-shadow:0 9px 25px #30285830;backdrop-filter:blur(12px);font-weight:700}.sticker.s1{transform:translate(66px,-88px) rotate(8deg)}.sticker.s2{transform:translate(-164px,54px) rotate(-6deg)}.spark{position:absolute;color:#fff;font-size:28px;left:19%;top:16%}.spark.s3{left:80%;top:71%;font-size:19px}
+.view{padding-bottom:48px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:15px;margin:29px 0 14px}.section-head h2,.page-head h1{font-size:29px}.section-head p,.page-head p{color:var(--muted);margin-top:4px}.page-head{padding:23px 0 13px}.page-head .kicker{margin-bottom:7px}.badge{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:var(--purple);background:var(--tint);border:1px solid var(--line);padding:3px 9px;border-radius:999px}.dot{width:7px;height:7px;background:currentColor;border-radius:50%;display:inline-block}.split{display:grid;grid-template-columns:minmax(0,2.12fr) minmax(280px,1fr);gap:17px;align-items:start}.card{border-radius:23px;min-width:0}.player{overflow:hidden}.player-header{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 17px}.player-title{display:flex;align-items:center;gap:10px}.square{width:37px;height:37px;border-radius:12px;background:var(--tint);color:var(--purple);display:grid;place-items:center;flex:none}.player-title h3{font-size:16px}.tiny{font-size:12px;color:var(--muted)}.side{display:grid;gap:15px}.side .card,.lesson-info,.task-card,.progress-panel{padding:17px}.side h3,.lesson-info h3,.task-card h3{font-size:17px;margin-bottom:3px}
+.mode-list{display:grid;gap:7px;margin-top:12px}.mode{display:flex;align-items:center;text-align:right;gap:9px;padding:9px 10px;min-width:0;min-height:52px;border-radius:13px;border:1px solid var(--line);background:var(--glass);color:var(--ink)}.mode[aria-pressed=true]{border-color:var(--purple);background:var(--tint)}.mode .square{width:32px;height:32px;border-radius:9px}.mode b,.mode small{display:block}.mode small{color:var(--muted);font-size:11px}.radio{width:15px;height:15px;border:1px solid var(--muted);border-radius:50%;margin-inline-start:auto;flex:none}.mode[aria-pressed=true] .radio{border:4px solid var(--purple);background:var(--paper)}
+.editor-shell{padding:0 13px;position:relative}.editor{border-radius:15px;aspect-ratio:16/9;width:100%;max-height:375px;direction:ltr;overflow:hidden;background:#171726;color:#ece8ff;display:grid;grid-template:9% 60% 31%/22% 78%;position:relative;box-shadow:inset 0 0 0 1px #ffffff13;font:600 clamp(7px,1vw,12px)/1.2 Arial,sans-serif}.ed-top{grid-column:1/-1;display:flex;align-items:center;gap:8px;padding:0 3%;background:#25243a;border-bottom:1px solid #ffffff14}.ed-dots{display:flex;gap:3px}.ed-dots i{width:6px;height:6px;border-radius:50%;background:#af8ef8}.ed-dots i:nth-child(2){background:#7fa9ff}.ed-dots i:nth-child(3){background:#638078}.ed-top span{margin-left:auto;color:#d4c9eb;font-size:.86em}.ed-tools{padding:8% 9%;display:flex;flex-direction:column;gap:7%;background:#201f33;border-right:1px solid #ffffff14}.ed-tool{display:flex;align-items:center;gap:5px;padding:5%;border-radius:5px;background:#30304a;white-space:nowrap}.ed-tool svg{width:12px;height:12px}.ed-tool.selected{background:#5f41a6;color:white}
+.ed-preview{position:relative;overflow:hidden;margin:2.2%;border-radius:8px;background:linear-gradient(150deg,#7256a2,#29254f);border:1px solid #ffffff19}.ed-preview img{width:100%;height:100%;object-fit:cover;display:block}.ed-preview:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 62%,#171227c4)}.ed-caption{position:absolute;z-index:1;inset:auto 4% 7%;text-align:right;font:600 clamp(9px,1.4vw,17px)/1.2 "IBM Plex Sans Arabic",Arial,sans-serif;color:white}.timeline{grid-column:1/-1;position:relative;margin:0 2.2% 2%;border-top:1px solid #ffffff26;overflow:hidden;padding:2% 1%}.ruler{display:flex;justify-content:space-between;color:#bfb4dc;font-size:.75em;margin-bottom:1.5%}.track{display:flex;gap:1%;height:27%;margin-block:1%}.clip{display:block;border-radius:4px;background:linear-gradient(90deg,#554285,#7856ab);border:1px solid #ae87f762;height:100%}.clip:nth-child(2){background:#4d69a8}.clip.audio{background:repeating-linear-gradient(95deg,#18746a 0 5px,#225d60 6px 8px);border-color:#56b7ac60}.needle{position:absolute;top:5%;bottom:5%;left:3%;width:2px;background:#e1d0ff;box-shadow:0 0 8px #d1bcff}.needle:before{content:"";position:absolute;top:0;left:-3px;border:4px solid transparent;border-top-color:#e1d0ff}.cue-marker{position:absolute;z-index:2;left:var(--x);top:var(--y);width:var(--w);height:var(--h);pointer-events:none;border:2px solid #ffe86e;border-radius:8px;box-shadow:0 0 0 1px #311f00}.cue-marker[data-mode=advanced]{border-color:#e8bfff;box-shadow:0 0 0 2px #a06df8,0 0 16px 4px #a474ff88;animation:cue-in .58s ease-out}.cue-marker:after{content:"➜";position:absolute;left:100%;top:50%;color:#ffe86e;font-size:20px;transform:translate(2px,-50%) rotate(180deg);text-shadow:0 1px 4px #000}.cue-marker[data-mode=advanced]:after{color:#f4daff}@keyframes cue-in{from{opacity:.25;transform:scale(1.15)}to{opacity:1;transform:scale(1)}}
+.controls{padding:10px 15px;display:grid;grid-template-columns:auto minmax(25px,1fr) auto auto;gap:9px;align-items:center}.control-play{background:var(--accent);color:#fff;width:39px;height:39px;min-height:39px}.control-play:hover{background:var(--accent);filter:brightness(1.1)}.controls input{width:100%;min-width:0;accent-color:var(--accent);cursor:pointer}.clock{color:var(--muted);font-size:12px;direction:ltr;font-variant-numeric:tabular-nums;white-space:nowrap}.player-foot{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:0 15px 11px}.lesson-list{display:grid;gap:6px;margin-top:10px}.lesson-row{display:flex;align-items:center;gap:9px;width:100%;padding:8px;border-radius:12px;border:1px solid transparent;background:transparent;color:var(--ink);text-align:right;line-height:1.4}.lesson-row:hover,.lesson-row[aria-current=step]{background:var(--tint);border-color:var(--line)}.lesson-row span:nth-child(2){flex:1}.idx{display:grid;place-items:center;flex:none;width:31px;height:31px;border-radius:9px;background:var(--control);color:var(--purple);font-weight:700}.done{color:var(--green)}
+.lesson-info,.task-card{margin-top:15px}.lesson-info dl{display:grid;grid-template-columns:auto 1fr;gap:6px 13px;margin:9px 0 0}.lesson-info dt{font-weight:700}.lesson-info dd{margin:0;color:var(--muted)}.task-card p{color:var(--muted)}.options{display:grid;gap:6px;margin-top:10px}.option{display:flex;align-items:center;gap:8px;padding:7px 9px;border:1px solid var(--line);border-radius:9px}.option input{accent-color:var(--accent)}.feedback{margin-top:10px;border-radius:10px;padding:8px 10px;background:var(--tint);color:var(--ink)}.feedback.good{color:var(--green)}
+.library-bar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin:12px 0 16px}.filters{display:flex;flex-wrap:wrap;gap:5px}.pill[aria-pressed=true]{background:var(--tint);color:var(--purple);border-color:var(--purple)}.search{display:flex;align-items:center;gap:8px;border-radius:999px;padding:5px 11px;min-width:min(100%,240px);color:var(--muted)}.search input{border:0;background:transparent;color:var(--ink);width:100%;min-height:32px}.media-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.media{overflow:hidden;display:flex;flex-direction:column}.cover{display:block;position:relative;width:100%;border:0;padding:0;aspect-ratio:16/9;overflow:hidden;background:linear-gradient(135deg,#473775,#19264e);color:#fff}.cover img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .3s}.cover:hover img{transform:scale(1.05)}.cover .reel-play{background:#1a10282f}.duration{position:absolute;bottom:8px;left:8px;z-index:2;border-radius:8px;background:#181428dc;color:white;padding:2px 6px;font-size:12px;direction:ltr}.media-info{padding:13px 15px;display:flex;align-items:center;justify-content:space-between;gap:8px}.media-info h3{font-size:17px}.media-info .icon-btn{background:var(--control)}.media-info [aria-pressed=true]{color:var(--purple);background:var(--tint)}.empty{padding:30px;text-align:center;color:var(--muted)}.notice{padding:11px 14px;border-radius:13px;background:var(--control);color:var(--muted);margin-top:9px}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin:13px 0}.stat{padding:16px}.stat strong{font-size:30px;color:var(--purple);display:block}.stat p{color:var(--muted)}progress{width:100%;height:12px;accent-color:var(--accent)}.progress-panel{margin-bottom:13px}.progress-panel .lesson-list{max-width:630px}.progress-panel h2{font-size:20px;margin-bottom:7px}.foot{border-top:1px solid var(--line);color:var(--muted);padding:16px 0 22px;display:flex;justify-content:space-between;gap:8px;font-size:12px}
+dialog{width:min(820px,calc(100% - 24px));border:1px solid var(--line);border-radius:21px;background:var(--paper);color:var(--ink);padding:0;box-shadow:0 28px 75px #08051e72}dialog::backdrop{background:#0c081bb0;backdrop-filter:blur(7px)}.dialog-head,.dialog-foot{padding:11px 14px;display:flex;align-items:center;justify-content:space-between;gap:10px}.embed{aspect-ratio:16/9;background:#161020}.embed iframe{display:block;width:100%;height:100%;border:0}.embed.portrait{aspect-ratio:auto;height:min(64vh,590px);height:min(64dvh,590px);display:flex;justify-content:center}.embed.portrait iframe{width:min(100%,calc(min(64vh,590px) * .5625));width:min(100%,calc(min(64dvh,590px) * .5625))}.toast{position:fixed;bottom:17px;left:50%;transform:translateX(-50%);z-index:3;padding:9px 16px;border-radius:12px;background:var(--paper);border:1px solid var(--line);box-shadow:var(--shadow);width:max-content;max-width:calc(100% - 30px);text-align:center}
+@media(max-width:1000px){.wrap{width:calc(100% - 40px)}.hero-copy{padding:26px}.split{grid-template-columns:minmax(0,1.7fr) minmax(250px,1fr)}}
+@media(max-width:740px){.wrap{width:calc(100% - 24px)}.top{min-height:0;padding:12px 0;grid-template-columns:1fr 1fr;gap:9px}.nav{grid-row:2;grid-column:1/-1;justify-content:center;width:100%}.nav button{flex:1;padding:5px;min-width:0}.top-actions{grid-column:2;grid-row:1}.hero{grid-template-columns:1fr;border-radius:24px}.hero-copy{padding:21px 20px 0}.hero h1{font-size:clamp(37px,9vw,56px)}.hero-art{min-height:171px}.orbit{width:260px;height:260px}.reel{width:174px;height:110px}.sticker.s1{transform:translate(49px,-62px) rotate(8deg)}.sticker.s2{transform:translate(-129px,36px) rotate(-6deg)}.split{grid-template-columns:1fr}.side{grid-row:2}.section-head{margin-top:22px}.section-head h2,.page-head h1{font-size:24px}.section-head>.badge{display:none}.media-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.stats{grid-template-columns:1fr 1fr}.stats .stat:last-child{grid-column:1/-1}.editor-shell{padding:0 8px}}
+@media(max-width:420px){.media-grid{grid-template-columns:1fr}.controls{padding-inline:8px;gap:5px}.clock{font-size:10px}.nav .ic{width:15px;height:15px}.nav button{font-size:13px}.player-header{padding:9px}.player-header .badge{font-size:10px}.lesson-info dl{grid-template-columns:1fr;gap:2px}.lesson-info dd{margin-bottom:4px}.dialog-foot{align-items:start;flex-direction:column}}
+html{scroll-behavior:smooth;scroll-padding-block-start:16px}
+:root{--ease-out:cubic-bezier(.22,.75,.22,1);--ease-glass:cubic-bezier(.2,.85,.24,1)}
+.scroll-line{display:none}
+@supports(animation-timeline:scroll()){
+ .scroll-line{display:block;position:fixed;z-index:4;inset:0 0 auto;height:3px;pointer-events:none;background:linear-gradient(90deg,#73bff6,#9465ec 48%,#6238c7);transform-origin:right;animation:scroll-fill linear both;animation-timeline:scroll(root block)}
+}
+@keyframes scroll-fill{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes rise{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
+@keyframes artwork-in{from{opacity:.3;transform:translateY(13px) scale(.94)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes sheet-in{from{opacity:0;transform:translateY(10px) scale(.98)}to{opacity:1;transform:none}}
+@keyframes light-pass{0%{opacity:0;transform:translateX(-165%) skewX(-18deg)}25%{opacity:.48}100%{opacity:0;transform:translateX(270%) skewX(-18deg)}}
+@keyframes icon-turn{from{opacity:.45;transform:rotate(-22deg) scale(.8)}to{opacity:1;transform:none}}
+.hero-intro .hero-copy>*{animation:rise .55s var(--ease-out) both}
+.hero-intro .hero-copy h1{animation-delay:45ms}
+.hero-intro .hero-copy p{animation-delay:90ms}
+.hero-intro .hero-copy .actions{animation-delay:125ms}
+.hero-intro .hero-art{animation:artwork-in .82s var(--ease-glass) 55ms both}
+.hero-intro .reel.r3::before{content:"";position:absolute;z-index:2;inset:-15% auto -15% 0;width:45%;background:linear-gradient(90deg,transparent,#fff9,transparent);pointer-events:none;animation:light-pass 1.05s var(--ease-out) .27s both}
+.reveal-pending{opacity:0;transform:translateY(15px)}
+.reveal-pending:focus-within,.reveal-pending:focus{opacity:1;transform:none}
+.reveal-in{animation:rise .54s var(--ease-out) var(--reveal-delay,0ms) both}
+.reveal-in:focus-within{animation-delay:0ms}
+dialog[open]{animation:sheet-in .26s var(--ease-glass) both}
+.toast:not([hidden]){animation:toast-in .24s var(--ease-out) both}
+@keyframes toast-in{from{opacity:0;transform:translate(-50%,7px)}to{opacity:1;transform:translate(-50%,0)}}
+.theme-turn .ic{animation:icon-turn .34s var(--ease-out)}
+:where(.primary,.outline,.icon-btn,.nav button,.mode,.pill,.lesson-row){transition:background-color .18s,color .18s,border-color .18s,transform .2s var(--ease-out)}
+:where(.primary,.outline,.icon-btn,.nav button,.mode,.pill,.lesson-row):active:not(:disabled){transform:scale(.98)}
+@media(hover:hover) and (pointer:fine){
+ :where(.primary,.outline,.mode,.pill):hover:not(:active){transform:translateY(-2px)}
+ .cover .reel-play i{transition:transform .3s var(--ease-out),background-color .2s}
+ .cover:hover .reel-play i{transform:scale(1.1);background-color:#ffffff54}
+}
+.needle{left:0;width:100%;background:none;box-shadow:none;pointer-events:none}
+.needle::before{left:-3px;z-index:1}
+.needle::after{content:"";position:absolute;inset:0 auto 0 0;width:2px;background:#e1d0ff;box-shadow:0 0 8px #d1bcff}
+@media(max-width:740px){.glass{backdrop-filter:blur(12px) saturate(132%)}}
+@media(prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+ .scroll-line{display:none}.reveal-pending{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="scroll-line" aria-hidden="true"></div>
+<a class="skip" href="#main">انتقل إلى المحتوى</a>
+<svg aria-hidden="true" style="display:none" xmlns="http://www.w3.org/2000/svg">
+ <symbol id="i-logo" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="5"/><path d="m10 8 6 4-6 4z"/></symbol>
+ <symbol id="i-play" viewBox="0 0 24 24"><path d="m9 5 11 7-11 7z" fill="currentColor" stroke="none"/></symbol>
+ <symbol id="i-pause" viewBox="0 0 24 24"><path d="M9 5v14m6-14v14" stroke-width="3"/></symbol>
+ <symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/></symbol>
+ <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 4v16h16M8 15l4-4 3 2 5-6"/></symbol>
+ <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.5 14.2A9 9 0 0 1 9.8 3.5 9 9 0 1 0 20.5 14.2Z"/></symbol>
+ <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"/></symbol>
+ <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M20 12H4m7-7-7 7 7 7"/></symbol>
+ <symbol id="i-replay" viewBox="0 0 24 24"><path d="M4 11a8 8 0 1 1 2 6m-2-6V5m0 6h6"/></symbol>
+ <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6Z"/><circle cx="12" cy="12" r="2"/></symbol>
+ <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></symbol>
+ <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 2 2.6 7.4L22 12l-7.4 2.6L12 22l-2.6-7.4L2 12l7.4-2.6z"/></symbol>
+ <symbol id="i-cut" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M8.5 8.5 20 20M8.5 15.5 20 4"/></symbol>
+ <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5Zm-9 9 9 5 9-5m-18 4 9 5 9-5"/></symbol>
+ <symbol id="i-audio" viewBox="0 0 24 24"><path d="M3 10v4m4-7v10m5-13v16m5-13v10m4-7v4"/></symbol>
+ <symbol id="i-bookmark" viewBox="0 0 24 24"><path d="M6 4h12v16l-6-4-6 4z"/></symbol>
+ <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></symbol>
+ <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+ <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+ <symbol id="i-up" viewBox="0 0 24 24"><path d="m6 15 6-6 6 6"/></symbol>
+ <symbol id="i-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+</svg>
+<header class="wrap top">
+ <a class="brand" href="#learn" aria-label="لقطة، التعلّم"><span class="brand-mark" data-icon="logo"></span><span><span class="brand-name">لقطة.</span><small>NANO STUDIO</small></span></a>
+ <nav class="nav glass" aria-label="التنقل الرئيسي">
+  <button type="button" data-view="learn"><span data-icon="logo"></span>التعلّم</button>
+  <button type="button" data-view="library"><span data-icon="grid"></span>المكتبة</button>
+  <button type="button" data-view="progress"><span data-icon="chart"></span>تقدّمي</button>
+ </nav>
+ <div class="top-actions"><button id="theme" type="button" class="icon-btn" aria-label="تفعيل الوضع الداكن"></button><span class="avatar" aria-hidden="true">ل</span></div>
+</header>
+<main class="wrap" id="main" tabindex="-1">
+ <div id="learn" class="view">
+  <section class="hero" aria-labelledby="hero-title">
+   <div class="hero-copy"><span class="kicker"><span class="dot"></span> استوديو التعلّم النانوي</span><h1 id="hero-title">كل لقطة، <span>مهارة.</span></h1><p>تدرّب على المونتاج الرقمي خطوة بخطوة. جرّب مستويات الإشارات البصرية وشاهد أمثلة مونتاج من معرض محمود كاني.</p>
+    <div class="actions"><button class="primary" id="start"><span data-icon="play"></span>ابدأ التدريب</button><button class="outline" data-view="library"><span data-icon="grid"></span>تصفّح الفيديوهات</button></div>
+   </div>
+   <div class="hero-art" aria-hidden="true"><div class="orbit"></div><div class="reel r1"><img id="hero-a" alt="" decoding="async" fetchpriority="low"></div><div class="reel r2"><img id="hero-b" alt="" decoding="async" fetchpriority="low"></div><div class="reel r3"><img id="hero-c" alt="" decoding="async" fetchpriority="high"><span class="reel-play"><i data-icon="play"></i></span></div><span class="spark">✦</span><span class="spark s3">✦</span><div class="sticker s1"><span data-icon="spark"></span> NANO</div><div class="sticker s2"><span data-icon="cut"></span> 01:00</div></div>
+  </section>
+  <div class="section-head"><div><span class="kicker">مسار المونتاج الرقمي</span><h2 id="lab-title">مختبر المشاهدة</h2><p>ثلاث محاكاة تفاعلية. مهارة واحدة في كل دقيقة.</p></div><span class="badge"><span class="dot"></span> تدريب تمهيدي</span></div>
+  <div class="split" aria-labelledby="lab-title">
+   <div>
+    <section id="lab" class="card glass player" tabindex="0" aria-label="مشغّل محاكاة المونتاج. مسافة للتشغيل، والأسهم للتحكم">
+     <div class="player-header"><div class="player-title"><span class="square" id="lesson-icon"></span><div><div class="tiny" id="lesson-count"></div><h3 id="lesson-title"></h3></div></div><span class="badge">محاكاة • ٦٠ ثانية</span></div>
+     <div class="editor-shell"><div class="editor" aria-hidden="true">
+      <div class="ed-top"><div class="ed-dots"><i></i><i></i><i></i></div> EDIT WORKSPACE <span>SEQUENCE / 01</span></div>
+      <div class="ed-tools"><div class="ed-tool" id="tool-cut"><span data-icon="cut"></span> Razor</div><div class="ed-tool" id="tool-layer"><span data-icon="layers"></span> Transitions</div><div class="ed-tool" id="tool-audio"><span data-icon="audio"></span> Audio</div></div>
+      <div class="ed-preview"><img id="stage-image" alt="" loading="lazy" decoding="async"><div class="ed-caption" dir="rtl" id="stage-caption"></div></div>
+      <div class="timeline"><div class="ruler"><span>00:00</span><span>00:15</span><span>00:30</span><span>00:45</span><span>01:00</span></div><div class="track"><i class="clip" style="width:28%"></i><i class="clip" style="width:36%"></i><i class="clip" style="width:31%"></i></div><div class="track"><i class="clip audio" style="width:97%"></i></div><i class="needle" id="needle"></i></div>
+      <div class="cue-marker" id="cue-marker" hidden></div>
+     </div></div>
+     <div class="controls"><button id="play" class="icon-btn control-play" type="button" aria-label="تشغيل المحاكاة"></button><input id="seek" type="range" min="0" max="60" step="1" value="0" aria-label="موضع التشغيل"><span class="clock" id="clock">00:00 / 01:00</span><button id="replay" type="button" class="icon-btn" aria-label="إعادة من البداية" data-icon="replay"></button></div>
+     <div class="player-foot"><span class="tiny" id="stage-text"></span><span><button id="prev" class="icon-btn" type="button" aria-label="الدرس السابق" data-icon="up"></button><button id="next" class="icon-btn" type="button" aria-label="الدرس التالي" data-icon="down"></button></span></div>
+    </section>
+    <section class="card glass lesson-info"><h3>هدف التدريب</h3><dl><dt>بنهاية التدريب</dt><dd id="objective"></dd><dt>قبل البدء</dt><dd id="prereq"></dd><dt>التطبيق العملي</dt><dd id="practice"></dd></dl></section>
+    <section class="card glass task-card"><h3>تحقّق من فهمك</h3><p id="question"></p><form id="quiz"><div class="options" id="options"></div><div class="actions"><button class="primary" type="submit">تحقّق من الإجابة</button><button type="button" class="outline" id="task-next" hidden>انتقل إلى التدريب التالي</button></div></form><p class="feedback" id="feedback" role="status" hidden></p></section>
+   </div>
+   <aside class="side">
+    <section class="card glass"><h3>مستوى الإشارات</h3><p class="tiny">جرّب نفس المشهد بثلاث طرق للتوجيه.</p>
+     <div class="mode-list" role="group" aria-label="مستوى الإشارات البصرية">
+      <button type="button" class="mode" data-mode="none"><span class="square" data-icon="eye"></span><span><b>بدون إشارات</b><small>المشهد الأساسي</small></span><i class="radio" aria-hidden="true"></i></button>
+      <button type="button" class="mode" data-mode="simple"><span class="square" data-icon="target"></span><span><b>إشارات بسيطة</b><small>تحديد ثابت للعنصر</small></span><i class="radio" aria-hidden="true"></i></button>
+      <button type="button" class="mode" data-mode="advanced"><span class="square" data-icon="spark"></span><span><b>إشارات متقدمة</b><small>إبراز متحرك ومتتابع</small></span><i class="radio" aria-hidden="true"></i></button>
+     </div>
+    </section>
+    <section class="card glass"><h3>وحدات المسار</h3><p class="tiny">اختر تدريبًا أو تنقّل بالسهمين داخل المشغّل.</p><div class="lesson-list" id="lessons"></div></section>
+   </aside>
+  </div>
+ </div>
+ <div id="library" class="view" hidden>
+  <div class="page-head"><span class="kicker">معرض محمود كاني</span><h1>مكتبة الفيديو</h1><p>شاهد أعمال مونتاج من المعرض الحالي واحفظ الأمثلة التي تريد الرجوع إليها.</p></div>
+  <p class="notice">الفيديوهات المعروضة أمثلة مؤقتة من Vimeo، ويمكن تشغيلها عند توفر الاتصال.</p>
+  <div class="library-bar"><div class="filters" role="group" aria-label="تصفية الفيديوهات"><button class="pill" data-filter="all" aria-pressed="true">الكل</button><button class="pill" data-filter="commercial" aria-pressed="false">إعلانات</button><button class="pill" data-filter="wedding" aria-pressed="false">أفراح</button><button class="pill" data-filter="art" aria-pressed="false">أعمال فنية</button><button class="pill" data-filter="saved" aria-pressed="false">المحفوظات</button></div><label class="search glass"><span data-icon="search"></span><input id="search" type="search" placeholder="ابحث عن فيديو" aria-label="ابحث عن فيديو"></label></div>
+  <div class="media-grid" id="media-grid"></div><p class="card glass empty" id="empty" role="status" hidden>لا توجد فيديوهات مطابقة.</p>
+ </div>
+ <div id="progress" class="view" hidden>
+  <div class="page-head"><span class="kicker">مسارك الشخصي</span><h1>تقدّمي</h1><p>تابع تدريباتك وإجاباتك المحفوظة على هذا المتصفح.</p></div>
+  <div class="stats" id="stats"></div>
+  <section class="card glass progress-panel"><h2>تدريبات المسار</h2><progress id="meter" max="3" value="0" aria-label="التدريبات المكتملة"></progress><div id="progress-lessons" class="lesson-list"></div></section>
+  <section class="card glass progress-panel"><h2>مشروع تطبيقي</h2><p>نفّذ مقطعًا مدته من ٣٠ إلى ٦٠ ثانية. راجع دقة القص وتسلسل اللقطات، مناسبة الانتقالات، تزامن الصوت، وجودة الإخراج.</p><div class="actions"><button class="outline" id="saved" type="button"><span data-icon="bookmark"></span>عرض المحفوظات</button></div></section>
+ </div>
+</main>
+<footer class="wrap foot"><span>لقطة · مختبر التعلّم النانوي</span><span>مشروع محمود كاني وازي</span></footer>
+<dialog id="video-dialog" aria-labelledby="video-title"><div class="dialog-head"><h2 id="video-title"></h2><button type="button" id="close-video" class="icon-btn" aria-label="إغلاق الفيديو" data-icon="close"></button></div><div class="embed" id="embed"></div><div class="dialog-foot"><span class="tiny">إذا تعذّر التحميل، افتح الفيديو في Vimeo.</span><a id="external-video" class="outline" target="_blank" rel="noopener noreferrer">افتح في Vimeo ↗</a></div></dialog>
+<div id="toast" class="toast" role="status" hidden></div>
+<noscript><p class="wrap notice">فعّل JavaScript لاستخدام المختبر والمكتبة.</p></noscript>
+<script>
+'use strict';
+// Replace entries here when the new source videos are ready.
+const media = [
+ {id:'1102737769',title:'إعلان هوديز',portrait:true,original:'Hoodies ad',category:'commercial',seconds:15,thumb:'2038554731-00d3940d9fa54d5b6aa0ec51771093138518f1ce4925b8bae2ecc204da1e3bb6'},
+ {id:'1091541012',title:'حفل زفاف ٢',portrait:true,original:'Wedding 2',category:'wedding',seconds:58,thumb:'2024398071-1d2c80da0ea943cec203f348305e06e8a0cec3bfcb2f1b3950d6e66c9ccf460a'},
+ {id:'1091535490',title:'حفل زفاف ١',portrait:true,original:'Wedding 1',category:'wedding',seconds:100,thumb:'2024390619-8de9b69f87e8ddb468bfd9f5ed8239070e37adab9be5e0311271f21a7ae473f7'},
+ {id:'1166068726',title:'حفل زفاف ٣',original:'Wedding 3',category:'wedding',seconds:170,thumb:'2123583895-4268fa6a99cabd5bebf998e4230c6284b2f10d138932cb487faef76007e289ae'},
+ {id:'1094565386',title:'توبكابي روف كافيه',portrait:true,original:'Topkapi Roof Cafe',category:'art',seconds:30,thumb:'2028155330-0c6bb1020eef4e4107383c55c6050739ab1ee3fb3f6ae476f6ebcdb167dc4420'},
+ {id:'995542094',title:'جولة مشي',portrait:true,original:'The Walk',category:'art',seconds:31,thumb:'1911642148-57d918c5fef668b94766bb8aeb07866c32f3e92b3157bf5cab483f6fa48b4704'}
+];
+const lessons = [
+ {id:'cut',icon:'cut',title:'القص وترتيب اللقطات',art:4,objective:'يحدد موضع القص ويعيد ترتيب ثلاث لقطات وفق تسلسل المشهد.',prereq:'معرفة كيفية استيراد المقاطع إلى الخط الزمني.',practice:'استورد ثلاث لقطات، واقطع الجزء الزائد من اللقطة الأولى، ثم اسحب اللقطات إلى ترتيب واضح.',steps:['اختر أداة القص.','ضع رأس التشغيل عند اللحظة المطلوبة.','احذف الجزء الزائد ورتّب اللقطات.'],targets:[[2,14,18,15],[30,74,14,19],[59,79,35,15]],question:'ما الخطوة التي تسبق قص اللقطة عند لحظة محددة؟',options:['تغيير مستوى صوت المقطع','وضع رأس التشغيل عند موضع القص','إضافة انتقال إلى نهاية المشروع'],correct:1,explain:'رأس التشغيل يحدد الإطار المقصود. ثبّت موضعه قبل تنفيذ القص.'},
+ {id:'transition',icon:'layers',title:'اختيار الانتقال البصري',art:5,objective:'يختار انتقالًا مناسبًا بين لقطتين ويضبط مدته.',prereq:'وجود لقطتين متجاورتين على الخط الزمني.',practice:'أضف انتقالًا بين لقطتين، وعاين نقطة الالتقاء قبل وبعد ضبط مدته.',steps:['افتح لوحة الانتقالات.','طبّق الانتقال عند التقاء اللقطتين.','عاين المشهد واضبط مدة الانتقال.'],targets:[[2,27,18,15],[26,77,21,17],[28,15,62,47]],question:'أين يوضع انتقال المزج بين لقطتين متجاورتين؟',options:['عند نقطة التقاء اللقطتين','على مسار الصوت وحده','في نهاية المشروع دائمًا'],correct:0,explain:'يوضع الانتقال على نقطة التقاء اللقطتين، ثم تُراجع مدته في المعاينة.'},
+ {id:'audio',icon:'audio',title:'مزامنة الصوت مع الصورة',art:0,objective:'يحاذي بداية الصوت مع الحدث البصري ويفحص التزامن بالمعاينة.',prereq:'وجود مقطع فيديو ومسار صوت مستقل في المشروع.',practice:'حاذِ بداية مؤثر صوتي مع حدث بصري واضح، ثم شغّل الجزء قبل الحدث وبعده للتحقق.',steps:['حدد المسار الصوتي.','حاذِ الموجة مع اللحظة البصرية.','شغّل المقطع للتحقق من التزامن.'],targets:[[2,40,18,15],[9,88,44,9],[28,15,62,47]],question:'كيف تتحقق من مزامنة المؤثر الصوتي بعد محاذاته؟',options:['تحذف الصورة من الخط الزمني','تعتمد على طول المسار فقط','تشغّل الجزء المحيط بالحدث وتراجع الصوت والصورة معًا'],correct:2,explain:'المعاينة قبل الحدث وبعده تكشف أي تقدّم أو تأخّر في الصوت عن الصورة.'}
+];
+const $=id=>document.getElementById(id);
+const icon=id=>'<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-'+id+'"></use></svg>';
+document.querySelectorAll('[data-icon]').forEach(el=>el.innerHTML=icon(el.dataset.icon));
+const thumb=(item,width=640)=>'https://i.vimeocdn.com/video/'+item.thumb+'-d_'+width+'x'+Math.round(width*9/16)+'?region=us';
+const time=t=>String(Math.floor(t/60)).padStart(2,'0')+':'+String(Math.floor(t%60)).padStart(2,'0');
+const categories={commercial:'إعلانات',wedding:'أفراح',art:'أعمال فنية'};
+const modes=['none','simple','advanced'];
+const storageKey='laqta-studio-v1';
+let stored={};
+try { stored=JSON.parse(localStorage.getItem(storageKey)||'{}')||{}; } catch {}
+const state={
+ theme:['light','dark'].includes(stored.theme)?stored.theme:(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'),
+ mode:modes.includes(stored.mode)?stored.mode:'none',
+ index:Math.max(0,lessons.findIndex(lesson=>lesson.id===stored.lesson)),
+ positions:stored.positions && typeof stored.positions==='object'?stored.positions:{},
+ completed:new Set(Array.isArray(stored.completed)?stored.completed.filter(id=>lessons.some(l=>l.id===id)):[]),
+ saved:new Set(Array.isArray(stored.saved)?stored.saved.filter(id=>media.some(v=>v.id===id)):[])
+};
+function save(){
+ try{localStorage.setItem(storageKey,JSON.stringify({theme:state.theme,mode:state.mode,lesson:lessons[state.index].id,positions:state.positions,completed:[...state.completed],saved:[...state.saved]}));}catch{}
+}
+function showTheme(){
+ document.documentElement.dataset.theme=state.theme;
+ $('theme').innerHTML=icon(state.theme==='dark'?'sun':'moon');
+ $('theme').setAttribute('aria-label',state.theme==='dark'?'تفعيل الوضع الفاتح':'تفعيل الوضع الداكن');
+ document.querySelector('meta[name=theme-color]').content=state.theme==='dark'?'#10101b':'#f4f4fa';
+}
+$('theme').addEventListener('click',()=>{
+ state.theme=state.theme==='light'?'dark':'light';
+ $('theme').classList.add('theme-turn');showTheme();save();
+});
+let view='learn',filter='all',position=0,playing=false,frame=0,lastFrame=0,lastSaved=-1,toastTimer=0,videoTrigger=null;
+const stepCount=3,duration=60;
+const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)');
+const revealTargets='.section-head,.player,.lesson-info,.task-card,.side > .card,.page-head,.library-bar,.media,.stat,.progress-panel';
+const awaitingReveal=new Set();
+const revealed=new WeakSet();
+function finishReveal(el,animate=true){
+ revealObserver?.unobserve(el);
+ awaitingReveal.delete(el);
+ el.classList.remove('reveal-pending');
+ revealed.add(el);
+ if(animate&&!reduceMotion.matches)el.classList.add('reveal-in');
+}
+const revealObserver='IntersectionObserver' in window ? new IntersectionObserver(entries=>{
+ for(const entry of entries)if(entry.isIntersecting&&awaitingReveal.has(entry.target))finishReveal(entry.target);
+},{threshold:.08,rootMargin:'0px 0px 28px 0px'}) : null;
+function clearRevealQueue(){
+ revealObserver?.disconnect();
+ for(const el of awaitingReveal)el.classList.remove('reveal-pending');
+ awaitingReveal.clear();
+}
+function queueReveals(root){
+ if(!revealObserver||reduceMotion.matches||root.closest('[hidden]'))return;
+ for(const el of awaitingReveal){
+  if(!el.isConnected){revealObserver.unobserve(el);awaitingReveal.delete(el);}
+ }
+ const candidates=[...root.querySelectorAll(revealTargets)].filter(el=>!revealed.has(el)&&!awaitingReveal.has(el)&&el.getBoundingClientRect().top>=innerHeight);
+ candidates.forEach((el,i)=>{
+  el.style.setProperty('--reveal-delay',Math.min(i%3,2)*45+'ms');
+  el.classList.add('reveal-pending');
+  awaitingReveal.add(el);
+  revealObserver.observe(el);
+ });
+}
+reduceMotion.addEventListener('change',()=>{if(reduceMotion.matches)clearRevealQueue();else queueReveals($(view));});
+document.addEventListener('focusin',e=>{
+ const el=e.target.closest('.reveal-pending');
+ if(el)finishReveal(el,false);
+});
+document.addEventListener('animationend',e=>{
+ if(e.animationName==='rise')e.target.classList.remove('reveal-in');
+ if(e.animationName==='light-pass')e.target.closest('.hero')?.classList.remove('hero-intro');
+});
+function focusLab(block='nearest'){
+ const lab=$('lab');
+ if(awaitingReveal.has(lab))finishReveal(lab);
+ lab.focus({preventScroll:true});
+ lab.scrollIntoView({block,behavior:reduceMotion.matches?'instant':'smooth'});
+}
+function loadLearnArt(){
+ const cover=$('hero-c');
+ if(!cover.hasAttribute('src')){
+  const loadLayers=()=>{
+   if(view!=='learn')return;
+   for(const [id,index] of [['hero-a',0],['hero-b',5]]){
+    const image=$(id);
+    if(!image.hasAttribute('src'))image.src=thumb(media[index],320);
+   }
+  };
+  cover.addEventListener('load',loadLayers,{once:true});
+  cover.addEventListener('error',loadLayers,{once:true});
+  cover.src=thumb(media[4],640);
+ }else if(cover.complete){
+  if(!$('hero-a').hasAttribute('src'))$('hero-a').src=thumb(media[0],320);
+  if(!$('hero-b').hasAttribute('src'))$('hero-b').src=thumb(media[5],320);
+ }
+ const image=$('stage-image');
+ const source=thumb(media[lessons[state.index].art],640);
+ if(image.getAttribute('src')!==source)image.src=source;
+}
+function toast(msg){clearTimeout(toastTimer);$('toast').textContent=msg;$('toast').hidden=false;toastTimer=setTimeout(()=>$('toast').hidden=true,2500);}
+function showView(name,focus=false){
+ if(!['learn','library','progress'].includes(name))name='learn';
+ clearRevealQueue();
+ if(name!=='learn')pause();
+ view=name;
+ for(const id of ['learn','library','progress'])$(id).hidden=id!==name;
+ document.querySelectorAll('.nav [data-view]').forEach(b=>{if(b.dataset.view===name)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
+ if(focus){window.scrollTo({top:0,behavior:'instant'});$('main').focus({preventScroll:true});}
+ if(name==='learn')loadLearnArt();
+ if(name==='library')renderLibrary();
+ if(name==='progress')renderProgress();
+ queueReveals($(name));
+}
+function go(name){if(location.hash!=='#'+name)history.pushState(null,'','#'+name);showView(name,true);}
+document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>go(b.dataset.view)));
+window.addEventListener('hashchange',()=>showView(location.hash.slice(1),true));
+function setPosition(value, persist=false){
+ position=Math.max(0,Math.min(duration,Number(value)||0));
+ renderFrame();
+ if(persist)rememberPosition();
+}
+function rememberPosition(){state.positions[lessons[state.index].id]=Math.floor(position);save();}
+const displayed={second:-1,caption:'',cue:''};
+function renderFrame(){
+ const lesson=lessons[state.index];
+ const step=Math.min(stepCount-1,Math.floor(position/(duration/stepCount)));
+ const stepTime=position-step*(duration/stepCount);
+ const second=Math.floor(position);
+ if(second!==displayed.second){
+  $('seek').value=second;
+  $('seek').setAttribute('aria-valuetext',second+' ثانية من 60');
+  $('clock').textContent=time(second)+' / 01:00';
+  displayed.second=second;
+ }
+ $('needle').style.transform='translateX('+(3+94*position/duration)+'%)';
+ const stepKey=lesson.id+'-'+step;
+ if(stepKey!==displayed.caption){
+  $('stage-caption').textContent=lesson.steps[step];
+  $('stage-text').textContent='الخطوة '+(step+1)+' من '+stepCount+' · '+lesson.steps[step];
+  displayed.caption=stepKey;
+ }
+ const mode=stepTime>=16?'none':state.mode;
+ const cueKey=mode==='none'?mode:stepKey+'-'+mode;
+ if(cueKey!==displayed.cue){
+  const cue=$('cue-marker');
+  cue.hidden=mode==='none';
+  if(!cue.hidden){
+   cue.dataset.mode=mode;
+   lesson.targets[step].forEach((n,i)=>cue.style.setProperty(['--x','--y','--w','--h'][i],n+'%'));
+  }
+  displayed.cue=cueKey;
+ }
+}
+function showPlay(){
+ $('play').innerHTML=icon(playing?'pause':'play');
+ $('play').setAttribute('aria-label',playing?'إيقاف المحاكاة مؤقتًا':'تشغيل المحاكاة');
+}
+function pause(){
+ if(playing){playing=false;cancelAnimationFrame(frame);rememberPosition();}
+ showPlay();
+}
+function tick(now){
+ if(!playing)return;
+ if(lastFrame)setPosition(position+(now-lastFrame)/1000);
+ lastFrame=now;
+ if(Math.floor(position/5)!==lastSaved){lastSaved=Math.floor(position/5);rememberPosition();}
+ if(position>=duration){pause();return;}
+ frame=requestAnimationFrame(tick);
+}
+function play(){
+ if(playing||view!=='learn')return;
+ if(position>=duration)setPosition(0,true);
+ playing=true;lastFrame=0;lastSaved=-1;showPlay();frame=requestAnimationFrame(tick);
+}
+function togglePlay(){if(playing)pause();else play();}
+function renderLessons(target){
+ $(target).replaceChildren(...lessons.map((l,i)=>{
+  const button=document.createElement('button');button.type='button';button.className='lesson-row';
+  if(i===state.index)button.setAttribute('aria-current','step');
+  button.innerHTML='<span class="idx">'+String(i+1).padStart(2,'0')+'</span><span><b>'+l.title+'</b><br><small class="tiny">تدريب ٦٠ ثانية</small></span>'+(state.completed.has(l.id)?'<span class="done" aria-label="مكتمل">'+icon('check')+'</span>':icon('arrow'));
+  button.addEventListener('click',()=>{if(view!=='learn')go('learn');selectLesson(i);focusLab();});
+  return button;
+ }));
+}
+function updateModes(){document.querySelectorAll('[data-mode].mode').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===state.mode)));renderFrame();}
+function selectLesson(index){
+ if(index<0||index>=lessons.length)return;
+ pause();state.index=index;
+ const l=lessons[index];
+ $('lesson-icon').innerHTML=icon(l.icon);
+ $('lesson-count').textContent='التدريب '+(index+1)+' من '+lessons.length;
+ $('lesson-title').textContent=l.title;
+ $('objective').textContent=l.objective;
+ $('prereq').textContent=l.prereq;
+ $('practice').textContent=l.practice;
+ $('question').textContent=l.question;
+ if(view==='learn')loadLearnArt();
+ document.querySelectorAll('.ed-tool').forEach(tool=>tool.classList.toggle('selected',tool.id==='tool-'+l.icon));
+ $('options').replaceChildren(...l.options.map((option,i)=>{
+  const label=document.createElement('label');label.className='option';
+  const input=document.createElement('input');input.type='radio';input.name='answer';input.value=i;input.required=true;
+  label.append(input,document.createTextNode(option));return label;
+ }));
+ $('feedback').hidden=true;$('task-next').hidden=true;
+ $('prev').disabled=index===0;$('next').disabled=index===lessons.length-1;
+ setPosition(state.positions[l.id]||0);updateModes();renderLessons('lessons');save();
+}
+document.querySelectorAll('.mode').forEach(b=>b.addEventListener('click',()=>{state.mode=b.dataset.mode;updateModes();save();}));
+$('play').addEventListener('click',togglePlay);
+$('replay').addEventListener('click',()=>{setPosition(0,true);play();});
+$('seek').addEventListener('input',event=>setPosition(event.target.value,true));
+$('prev').addEventListener('click',()=>selectLesson(state.index-1));
+$('next').addEventListener('click',()=>selectLesson(state.index+1));
+$('start').addEventListener('click',()=>{focusLab('start');play();});
+$('lab').addEventListener('keydown',e=>{
+ if(e.target!==$('lab')||![' ','ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(e.key))return;
+ e.preventDefault();
+ if(e.key===' ')togglePlay();
+ if(e.key==='ArrowLeft'||e.key==='ArrowRight')setPosition(position+(e.key==='ArrowLeft'?-5:5),true);
+ if(e.key==='ArrowUp'||e.key==='ArrowDown')selectLesson(state.index+(e.key==='ArrowUp'?-1:1));
+});
+document.addEventListener('visibilitychange',()=>{if(document.hidden)pause();});
+window.addEventListener('pagehide',rememberPosition);
+$('quiz').addEventListener('submit',e=>{
+ e.preventDefault();
+ const lesson=lessons[state.index], answer=new FormData(e.currentTarget).get('answer');
+ if(answer===null)return;
+ const correct=Number(answer)===lesson.correct;
+ $('feedback').hidden=false;
+ $('feedback').classList.toggle('good',correct);
+ $('feedback').textContent=(correct?'إجابة صحيحة. ':'جرّب مرة أخرى. ')+lesson.explain;
+ if(correct){state.completed.add(lesson.id);save();renderLessons('lessons');$('task-next').hidden=false;$('task-next').textContent=state.index===lessons.length-1?'عرض تقدّمي':'انتقل إلى التدريب التالي';}
+});
+$('task-next').addEventListener('click',()=>{if(state.index===lessons.length-1)go('progress');else{selectLesson(state.index+1);focusLab();}});
+function renderLibrary(){
+ const query=$('search').value.trim().toLowerCase();
+ document.querySelectorAll('[data-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.filter===filter)));
+ const selection=media.filter(v=>(filter==='all'||v.category===filter||(filter==='saved'&&state.saved.has(v.id)))&&(!query||[v.title,v.original,categories[v.category]].some(t=>t.toLowerCase().includes(query))));
+ $('empty').hidden=selection.length>0;
+ $('media-grid').replaceChildren(...selection.map(v=>{
+  const card=document.createElement('article');card.className='card glass media';
+  card.innerHTML='<button type="button" class="cover"><img alt="" loading="lazy" decoding="async"><span class="reel-play"><i>'+icon('play')+'</i></span><span class="duration">'+time(v.seconds)+'</span></button><div class="media-info"><div><div class="tiny">'+categories[v.category]+'</div><h3></h3></div><button type="button" class="icon-btn">'+icon('bookmark')+'</button></div>';
+  const [open,bookmark]=card.querySelectorAll('button');
+  card.querySelector('h3').textContent=v.title;card.querySelector('img').src=thumb(v,480);
+  open.setAttribute('aria-label','شغّل '+v.title);open.addEventListener('click',()=>openVideo(v,open));
+  const updateBookmark=()=>{const saved=state.saved.has(v.id);bookmark.setAttribute('aria-pressed',String(saved));bookmark.setAttribute('aria-label',(saved?'إزالة من المحفوظات: ':'احفظ الفيديو: ')+v.title);};
+  updateBookmark();
+  bookmark.addEventListener('click',()=>{
+   if(state.saved.has(v.id)){state.saved.delete(v.id);toast('أُزيل الفيديو من المحفوظات');}
+   else{state.saved.add(v.id);toast('حُفظ الفيديو');}
+   save();updateBookmark();
+   if(filter==='saved'){renderLibrary();document.querySelector('[data-filter=saved]').focus();}
+  });
+  return card;
+ }));
+ queueReveals($('media-grid'));
+}
+function openVideo(item,trigger){
+ pause();videoTrigger=trigger;
+ $('video-title').textContent=item.title;
+ $('external-video').href='https://vimeo.com/'+item.id;
+ const frame=document.createElement('iframe');frame.title=item.title+' — Vimeo';frame.allow='autoplay; fullscreen; picture-in-picture; encrypted-media';frame.allowFullscreen=true;frame.referrerPolicy='strict-origin-when-cross-origin';
+ frame.src='https://player.vimeo.com/video/'+item.id+'?autoplay=1&autopause=1&dnt=1&title=0';
+ $('embed').classList.toggle('portrait',Boolean(item.portrait));
+ $('embed').replaceChildren(frame);
+ $('video-dialog').showModal();$('close-video').focus();
+}
+function closeVideo(){
+ $('embed').replaceChildren();
+ $('video-dialog').close();
+}
+$('close-video').addEventListener('click',closeVideo);
+$('video-dialog').addEventListener('close',()=>{$('embed').replaceChildren();if(videoTrigger?.isConnected)videoTrigger.focus();});
+$('video-dialog').addEventListener('click',e=>{if(e.target===$('video-dialog'))closeVideo();});
+document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.filter;renderLibrary();}));
+$('search').addEventListener('input',renderLibrary);
+$('saved').addEventListener('click',()=>{filter='saved';$('search').value='';go('library');});
+function renderProgress(){
+ $('meter').value=state.completed.size;
+ $('stats').innerHTML=[[state.completed.size+' / '+lessons.length,'تدريبات مجتازة'],[state.saved.size,'فيديوهات محفوظة'],[lessons.length,'تدريبات في المسار']].map(([value,label])=>'<div class="card glass stat"><strong>'+value+'</strong><p>'+label+'</p></div>').join('');
+ renderLessons('progress-lessons');
+}
+const initialView=location.hash.slice(1);
+if(['library','progress'].includes(initialView))view=initialView;
+if(!reduceMotion.matches)$('learn').querySelector('.hero').classList.add('hero-intro');
+showTheme();selectLesson(state.index);showView(view);
+</script>
+</body>
+</html>
