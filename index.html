@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#f4f4fa">
-<meta name="description" content="لقطة، مساحة عربية لتعلّم المونتاج خطوة بخطوة، مع مختبر للإشارات البصرية ومكتبة فيديو.">
-<title>لقطة — مختبر التعلّم النانوي</title>
+<meta name="description" content="Kanvo، مساحة عربية لتعلّم المونتاج خطوة بخطوة، مع مختبر للإشارات البصرية ومكتبة فيديو.">
+<title>Kanvo — مختبر التعلّم النانوي</title>
 <link rel="preconnect" href="https://i.vimeocdn.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&amp;display=swap" media="print" onload="this.media='all'">
 <style>
@@ -20,7 +20,7 @@ button,input,select{font:inherit}button,a,input,select{ -webkit-tap-highlight-co
 .view{padding-bottom:48px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:15px;margin:29px 0 14px}.section-head h2,.page-head h1{font-size:29px}.section-head p,.page-head p{color:var(--muted);margin-top:4px}.page-head{padding:23px 0 13px}.page-head .kicker{margin-bottom:7px}.badge{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:var(--purple);background:var(--tint);border:1px solid var(--line);padding:3px 9px;border-radius:999px}.dot{width:7px;height:7px;background:currentColor;border-radius:50%;display:inline-block}.split{display:grid;grid-template-columns:minmax(0,2.12fr) minmax(280px,1fr);gap:17px;align-items:start}.card{border-radius:23px;min-width:0}.player{overflow:hidden}.player-header{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 17px}.player-title{display:flex;align-items:center;gap:10px}.square{width:37px;height:37px;border-radius:12px;background:var(--tint);color:var(--purple);display:grid;place-items:center;flex:none}.player-title h3{font-size:16px}.tiny{font-size:12px;color:var(--muted)}.side{display:grid;gap:15px}.side .card,.lesson-info,.task-card,.progress-panel{padding:17px}.side h3,.lesson-info h3,.task-card h3{font-size:17px;margin-bottom:3px}
 .mode-list{display:grid;gap:7px;margin-top:12px}.mode{display:flex;align-items:center;text-align:right;gap:9px;padding:9px 10px;min-width:0;min-height:52px;border-radius:13px;border:1px solid var(--line);background:var(--glass);color:var(--ink)}.mode[aria-pressed=true]{border-color:var(--purple);background:var(--tint)}.mode .square{width:32px;height:32px;border-radius:9px}.mode b,.mode small{display:block}.mode small{color:var(--muted);font-size:11px}.radio{width:15px;height:15px;border:1px solid var(--muted);border-radius:50%;margin-inline-start:auto;flex:none}.mode[aria-pressed=true] .radio{border:4px solid var(--purple);background:var(--paper)}
 .editor-shell{padding:0 13px;position:relative}.editor{border-radius:15px;aspect-ratio:16/9;width:100%;max-height:375px;direction:ltr;overflow:hidden;background:#171726;color:#ece8ff;display:grid;grid-template:9% 60% 31%/22% 78%;position:relative;box-shadow:inset 0 0 0 1px #ffffff13;font:600 clamp(7px,1vw,12px)/1.2 Arial,sans-serif}.ed-top{grid-column:1/-1;display:flex;align-items:center;gap:8px;padding:0 3%;background:#25243a;border-bottom:1px solid #ffffff14}.ed-dots{display:flex;gap:3px}.ed-dots i{width:6px;height:6px;border-radius:50%;background:#af8ef8}.ed-dots i:nth-child(2){background:#7fa9ff}.ed-dots i:nth-child(3){background:#638078}.ed-top span{margin-left:auto;color:#d4c9eb;font-size:.86em}.ed-tools{padding:8% 9%;display:flex;flex-direction:column;gap:7%;background:#201f33;border-right:1px solid #ffffff14}.ed-tool{display:flex;align-items:center;gap:5px;padding:5%;border-radius:5px;background:#30304a;white-space:nowrap}.ed-tool svg{width:12px;height:12px}.ed-tool.selected{background:#5f41a6;color:white}
-.ed-preview{position:relative;overflow:hidden;margin:2.2%;border-radius:8px;background:linear-gradient(150deg,#7256a2,#29254f);border:1px solid #ffffff19}.ed-preview img{width:100%;height:100%;object-fit:cover;display:block}.ed-preview:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 62%,#171227c4)}.ed-caption{position:absolute;z-index:1;inset:auto 4% 7%;text-align:right;font:600 clamp(9px,1.4vw,17px)/1.2 "IBM Plex Sans Arabic",Arial,sans-serif;color:white}.timeline{grid-column:1/-1;position:relative;margin:0 2.2% 2%;border-top:1px solid #ffffff26;overflow:hidden;padding:2% 1%}.ruler{display:flex;justify-content:space-between;color:#bfb4dc;font-size:.75em;margin-bottom:1.5%}.track{display:flex;gap:1%;height:27%;margin-block:1%}.clip{display:block;border-radius:4px;background:linear-gradient(90deg,#554285,#7856ab);border:1px solid #ae87f762;height:100%}.clip:nth-child(2){background:#4d69a8}.clip.audio{background:repeating-linear-gradient(95deg,#18746a 0 5px,#225d60 6px 8px);border-color:#56b7ac60}.needle{position:absolute;top:5%;bottom:5%;left:3%;width:2px;background:#e1d0ff;box-shadow:0 0 8px #d1bcff}.needle:before{content:"";position:absolute;top:0;left:-3px;border:4px solid transparent;border-top-color:#e1d0ff}.cue-marker{position:absolute;z-index:2;left:var(--x);top:var(--y);width:var(--w);height:var(--h);pointer-events:none;border:2px solid #ffe86e;border-radius:8px;box-shadow:0 0 0 1px #311f00}.cue-marker[data-mode=advanced]{border-color:#e8bfff;box-shadow:0 0 0 2px #a06df8,0 0 16px 4px #a474ff88;animation:cue-in .58s ease-out}.cue-marker:after{content:"➜";position:absolute;left:100%;top:50%;color:#ffe86e;font-size:20px;transform:translate(2px,-50%) rotate(180deg);text-shadow:0 1px 4px #000}.cue-marker[data-mode=advanced]:after{color:#f4daff}@keyframes cue-in{from{opacity:.25;transform:scale(1.15)}to{opacity:1;transform:scale(1)}}
+.ed-preview{position:relative;overflow:hidden;margin:2.2%;border-radius:8px;background:linear-gradient(150deg,#7256a2,#29254f);border:1px solid #ffffff19}.ed-preview img{width:100%;height:100%;object-fit:cover;display:block}.ed-preview:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 62%,#171227c4)}.ed-caption{position:absolute;z-index:1;inset:auto 4% 7%;text-align:right;font:600 clamp(9px,1.4vw,17px)/1.2 "IBM Plex Sans Arabic",Arial,sans-serif;color:white}.timeline{grid-column:1/-1;position:relative;margin:0 2.2% 2%;border-top:1px solid #ffffff26;overflow:hidden;padding:2% 1%}.ruler{display:flex;justify-content:space-between;color:#bfb4dc;font-size:.75em;margin-bottom:1.5%}.track{display:flex;gap:1%;height:27%;margin-block:1%}.clip{display:block;border-radius:4px;background:linear-gradient(90deg,#554285,#7856ab);border:1px solid #ae87f762;height:100%}.clip:nth-child(2){background:#4d69a8}.clip.audio{background:repeating-linear-gradient(95deg,#18746a 0 5px,#225d60 6px 8px);border-color:#56b7ac60}.needle{position:absolute;top:5%;bottom:5%;left:3%;width:2px;background:#e1d0ff;box-shadow:0 0 8px #d1bcff}.needle:before{content:"";position:absolute;top:0;left:-3px;border:4px solid transparent;border-top-color:#e1d0ff}.cue-marker{position:absolute;z-index:2;left:var(--x);top:var(--y);width:var(--w);height:var(--h);pointer-events:none;border:2px solid #ffe86e;border-radius:8px;box-shadow:0 0 0 1px #311f00}.cue-marker:after{content:"➜";position:absolute;left:100%;top:50%;color:#ffe86e;font-size:20px;transform:translate(2px,-50%) rotate(180deg);text-shadow:0 1px 4px #000}
 .controls{padding:10px 15px;display:grid;grid-template-columns:auto minmax(25px,1fr) auto auto;gap:9px;align-items:center}.control-play{background:var(--accent);color:#fff;width:39px;height:39px;min-height:39px}.control-play:hover{background:var(--accent);filter:brightness(1.1)}.controls input{width:100%;min-width:0;accent-color:var(--accent);cursor:pointer}.clock{color:var(--muted);font-size:12px;direction:ltr;font-variant-numeric:tabular-nums;white-space:nowrap}.player-foot{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:0 15px 11px}.lesson-list{display:grid;gap:6px;margin-top:10px}.lesson-row{display:flex;align-items:center;gap:9px;width:100%;padding:8px;border-radius:12px;border:1px solid transparent;background:transparent;color:var(--ink);text-align:right;line-height:1.4}.lesson-row:hover,.lesson-row[aria-current=step]{background:var(--tint);border-color:var(--line)}.lesson-row span:nth-child(2){flex:1}.idx{display:grid;place-items:center;flex:none;width:31px;height:31px;border-radius:9px;background:var(--control);color:var(--purple);font-weight:700}.done{color:var(--green)}
 .lesson-info,.task-card{margin-top:15px}.lesson-info dl{display:grid;grid-template-columns:auto 1fr;gap:6px 13px;margin:9px 0 0}.lesson-info dt{font-weight:700}.lesson-info dd{margin:0;color:var(--muted)}.task-card p{color:var(--muted)}.options{display:grid;gap:6px;margin-top:10px}.option{display:flex;align-items:center;gap:8px;padding:7px 9px;border:1px solid var(--line);border-radius:9px}.option input{accent-color:var(--accent)}.feedback{margin-top:10px;border-radius:10px;padding:8px 10px;background:var(--tint);color:var(--ink)}.feedback.good{color:var(--green)}
 .library-bar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin:12px 0 16px}.filters{display:flex;flex-wrap:wrap;gap:5px}.pill[aria-pressed=true]{background:var(--tint);color:var(--purple);border-color:var(--purple)}.search{display:flex;align-items:center;gap:8px;border-radius:999px;padding:5px 11px;min-width:min(100%,240px);color:var(--muted)}.search input{border:0;background:transparent;color:var(--ink);width:100%;min-height:32px}.media-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.media{overflow:hidden;display:flex;flex-direction:column}.cover{display:block;position:relative;width:100%;border:0;padding:0;aspect-ratio:16/9;overflow:hidden;background:linear-gradient(135deg,#473775,#19264e);color:#fff}.cover img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .3s}.cover:hover img{transform:scale(1.05)}.cover .reel-play{background:#1a10282f}.duration{position:absolute;bottom:8px;left:8px;z-index:2;border-radius:8px;background:#181428dc;color:white;padding:2px 6px;font-size:12px;direction:ltr}.media-info{padding:13px 15px;display:flex;align-items:center;justify-content:space-between;gap:8px}.media-info h3{font-size:17px}.media-info .icon-btn{background:var(--control)}.media-info [aria-pressed=true]{color:var(--purple);background:var(--tint)}.empty{padding:30px;text-align:center;color:var(--muted)}.notice{padding:11px 14px;border-radius:13px;background:var(--control);color:var(--muted);margin-top:9px}
@@ -65,7 +65,26 @@ dialog[open]{animation:sheet-in .26s var(--ease-glass) both}
 .needle{left:0;width:100%;background:none;box-shadow:none;pointer-events:none}
 .needle::before{left:-3px;z-index:1}
 .needle::after{content:"";position:absolute;inset:0 auto 0 0;width:2px;background:#e1d0ff;box-shadow:0 0 8px #d1bcff}
+.brand-name{font-family:Arial,sans-serif;letter-spacing:-.8px}
+.cue-marker[data-mode=advanced]{border:2px solid #dfc8ff;border-radius:5px;box-shadow:0 0 0 1px #925df8,0 0 12px 3px #b88bffb3,0 0 0 100vmax #0007;animation:spotlight-in .28s var(--ease-out) both}
+.cue-marker[data-mode=advanced]::after{color:#f2e2ff;font-size:clamp(17px,3vw,25px);line-height:1;text-shadow:0 0 4px #a566ff,0 0 11px #d1a1ff;transform:translate(4px,-50%) rotate(180deg)}
+.cue-marker[data-mode=advanced][data-arrow=left]::after{left:auto;right:100%;transform:translate(-4px,-50%)}
+.cue-marker[data-mode=advanced][data-arrow=top]::after{left:50%;top:auto;bottom:100%;transform:translate(-50%,-4px) rotate(90deg)}
+.cue-marker[data-mode=advanced][data-arrow=bottom]::after{left:50%;top:100%;transform:translate(-50%,4px) rotate(-90deg)}
+@keyframes spotlight-in{from{opacity:0}to{opacity:1}}
 @media(max-width:740px){.glass{backdrop-filter:blur(12px) saturate(132%)}}
+@media(max-width:740px){
+ .player .cue-settings{margin:0 10px 10px;padding:0;border:0;border-radius:0;background:none;box-shadow:none;backdrop-filter:none}
+ .player .cue-settings h3{font-size:12px;color:var(--muted);margin:0 4px 5px}
+ .player .cue-settings>p{display:none}
+ .mode-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:3px;padding:4px;margin:0;border:1px solid var(--line);border-radius:999px;background:var(--glass);box-shadow:inset 0 1px 0 #ffffff28}
+ .mode{justify-content:center;gap:4px;text-align:center;min-height:42px;padding:3px 2px;border:0;border-radius:999px;background:transparent;color:var(--muted);font-size:clamp(10px,3.1vw,13px);white-space:nowrap}
+ .mode[aria-pressed=true]{color:var(--purple);background:var(--tint);box-shadow:inset 0 1px 0 #ffffff35}
+ .mode .square{width:auto;height:auto;background:none;color:inherit}
+ .mode .ic{width:13px;height:13px}
+ .mode small,.mode .radio{display:none}
+}
+@media(max-width:340px){.mode .square{display:none}}
 @media(prefers-reduced-motion:reduce){
  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
  .scroll-line{display:none}.reveal-pending{opacity:1;transform:none}
@@ -99,13 +118,13 @@ dialog[open]{animation:sheet-in .26s var(--ease-glass) both}
  <symbol id="i-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
 </svg>
 <header class="wrap top">
- <a class="brand" href="#learn" aria-label="لقطة، التعلّم"><span class="brand-mark" data-icon="logo"></span><span><span class="brand-name">لقطة.</span><small>NANO STUDIO</small></span></a>
+ <a class="brand" href="#learn" aria-label="Kanvo، التعلّم"><span class="brand-mark" data-icon="logo"></span><span><span class="brand-name" lang="en" dir="ltr">Kanvo</span><small>NANO STUDIO</small></span></a>
  <nav class="nav glass" aria-label="التنقل الرئيسي">
   <button type="button" data-view="learn"><span data-icon="logo"></span>التعلّم</button>
   <button type="button" data-view="library"><span data-icon="grid"></span>المكتبة</button>
   <button type="button" data-view="progress"><span data-icon="chart"></span>تقدّمي</button>
  </nav>
- <div class="top-actions"><button id="theme" type="button" class="icon-btn" aria-label="تفعيل الوضع الداكن"></button><span class="avatar" aria-hidden="true">ل</span></div>
+ <div class="top-actions"><button id="theme" type="button" class="icon-btn" aria-label="تفعيل الوضع الداكن"></button><span class="avatar" aria-hidden="true">K</span></div>
 </header>
 <main class="wrap" id="main" tabindex="-1">
  <div id="learn" class="view">
@@ -120,11 +139,11 @@ dialog[open]{animation:sheet-in .26s var(--ease-glass) both}
    <div>
     <section id="lab" class="card glass player" tabindex="0" aria-label="مشغّل محاكاة المونتاج. مسافة للتشغيل، والأسهم للتحكم">
      <div class="player-header"><div class="player-title"><span class="square" id="lesson-icon"></span><div><div class="tiny" id="lesson-count"></div><h3 id="lesson-title"></h3></div></div><span class="badge">محاكاة • ٦٠ ثانية</span></div>
-     <div class="editor-shell"><div class="editor" aria-hidden="true">
+     <div class="editor-shell"><div class="editor" id="editor" aria-hidden="true">
       <div class="ed-top"><div class="ed-dots"><i></i><i></i><i></i></div> EDIT WORKSPACE <span>SEQUENCE / 01</span></div>
       <div class="ed-tools"><div class="ed-tool" id="tool-cut"><span data-icon="cut"></span> Razor</div><div class="ed-tool" id="tool-layer"><span data-icon="layers"></span> Transitions</div><div class="ed-tool" id="tool-audio"><span data-icon="audio"></span> Audio</div></div>
       <div class="ed-preview"><img id="stage-image" alt="" loading="lazy" decoding="async"><div class="ed-caption" dir="rtl" id="stage-caption"></div></div>
-      <div class="timeline"><div class="ruler"><span>00:00</span><span>00:15</span><span>00:30</span><span>00:45</span><span>01:00</span></div><div class="track"><i class="clip" style="width:28%"></i><i class="clip" style="width:36%"></i><i class="clip" style="width:31%"></i></div><div class="track"><i class="clip audio" style="width:97%"></i></div><i class="needle" id="needle"></i></div>
+      <div class="timeline"><div class="ruler"><span>00:00</span><span>00:15</span><span>00:30</span><span>00:45</span><span>01:00</span></div><div class="track" id="video-track"><i class="clip" style="width:28%"></i><i class="clip" style="width:36%;position:relative"><span id="transition-point" style="position:absolute;inset:0 auto 0 -8%;width:21%"></span></i><i class="clip" style="width:31%"></i></div><div class="track"><i class="clip audio" id="audio-track" style="width:97%"></i></div><i class="needle" id="needle"></i></div>
       <div class="cue-marker" id="cue-marker" hidden></div>
      </div></div>
      <div class="controls"><button id="play" class="icon-btn control-play" type="button" aria-label="تشغيل المحاكاة"></button><input id="seek" type="range" min="0" max="60" step="1" value="0" aria-label="موضع التشغيل"><span class="clock" id="clock">00:00 / 01:00</span><button id="replay" type="button" class="icon-btn" aria-label="إعادة من البداية" data-icon="replay"></button></div>
@@ -133,12 +152,12 @@ dialog[open]{animation:sheet-in .26s var(--ease-glass) both}
     <section class="card glass lesson-info"><h3>هدف التدريب</h3><dl><dt>بنهاية التدريب</dt><dd id="objective"></dd><dt>قبل البدء</dt><dd id="prereq"></dd><dt>التطبيق العملي</dt><dd id="practice"></dd></dl></section>
     <section class="card glass task-card"><h3>تحقّق من فهمك</h3><p id="question"></p><form id="quiz"><div class="options" id="options"></div><div class="actions"><button class="primary" type="submit">تحقّق من الإجابة</button><button type="button" class="outline" id="task-next" hidden>انتقل إلى التدريب التالي</button></div></form><p class="feedback" id="feedback" role="status" hidden></p></section>
    </div>
-   <aside class="side">
-    <section class="card glass"><h3>مستوى الإشارات</h3><p class="tiny">جرّب نفس المشهد بثلاث طرق للتوجيه.</p>
+   <aside class="side" id="learning-side">
+    <section class="card glass cue-settings" id="cue-settings"><h3>مستوى الإشارات</h3><p class="tiny">جرّب نفس المشهد بثلاث طرق للتوجيه.</p>
      <div class="mode-list" role="group" aria-label="مستوى الإشارات البصرية">
       <button type="button" class="mode" data-mode="none"><span class="square" data-icon="eye"></span><span><b>بدون إشارات</b><small>المشهد الأساسي</small></span><i class="radio" aria-hidden="true"></i></button>
       <button type="button" class="mode" data-mode="simple"><span class="square" data-icon="target"></span><span><b>إشارات بسيطة</b><small>تحديد ثابت للعنصر</small></span><i class="radio" aria-hidden="true"></i></button>
-      <button type="button" class="mode" data-mode="advanced"><span class="square" data-icon="spark"></span><span><b>إشارات متقدمة</b><small>إبراز متحرك ومتتابع</small></span><i class="radio" aria-hidden="true"></i></button>
+      <button type="button" class="mode" data-mode="advanced"><span class="square" data-icon="spark"></span><span><b>إشارات متقدمة</b><small>تعتيم مع إطار وسهم متوهّجين</small></span><i class="radio" aria-hidden="true"></i></button>
      </div>
     </section>
     <section class="card glass"><h3>وحدات المسار</h3><p class="tiny">اختر تدريبًا أو تنقّل بالسهمين داخل المشغّل.</p><div class="lesson-list" id="lessons"></div></section>
@@ -158,7 +177,7 @@ dialog[open]{animation:sheet-in .26s var(--ease-glass) both}
   <section class="card glass progress-panel"><h2>مشروع تطبيقي</h2><p>نفّذ مقطعًا مدته من ٣٠ إلى ٦٠ ثانية. راجع دقة القص وتسلسل اللقطات، مناسبة الانتقالات، تزامن الصوت، وجودة الإخراج.</p><div class="actions"><button class="outline" id="saved" type="button"><span data-icon="bookmark"></span>عرض المحفوظات</button></div></section>
  </div>
 </main>
-<footer class="wrap foot"><span>لقطة · مختبر التعلّم النانوي</span><span>مشروع محمود كاني وازي</span></footer>
+<footer class="wrap foot"><span><bdi lang="en">Kanvo</bdi> · مختبر التعلّم النانوي</span><span>مشروع محمود كاني وازي</span></footer>
 <dialog id="video-dialog" aria-labelledby="video-title"><div class="dialog-head"><h2 id="video-title"></h2><button type="button" id="close-video" class="icon-btn" aria-label="إغلاق الفيديو" data-icon="close"></button></div><div class="embed" id="embed"></div><div class="dialog-foot"><span class="tiny">إذا تعذّر التحميل، افتح الفيديو في Vimeo.</span><a id="external-video" class="outline" target="_blank" rel="noopener noreferrer">افتح في Vimeo ↗</a></div></dialog>
 <div id="toast" class="toast" role="status" hidden></div>
 <noscript><p class="wrap notice">فعّل JavaScript لاستخدام المختبر والمكتبة.</p></noscript>
@@ -174,9 +193,9 @@ const media = [
  {id:'995542094',title:'جولة مشي',portrait:true,original:'The Walk',category:'art',seconds:31,thumb:'1911642148-57d918c5fef668b94766bb8aeb07866c32f3e92b3157bf5cab483f6fa48b4704'}
 ];
 const lessons = [
- {id:'cut',icon:'cut',title:'القص وترتيب اللقطات',art:4,objective:'يحدد موضع القص ويعيد ترتيب ثلاث لقطات وفق تسلسل المشهد.',prereq:'معرفة كيفية استيراد المقاطع إلى الخط الزمني.',practice:'استورد ثلاث لقطات، واقطع الجزء الزائد من اللقطة الأولى، ثم اسحب اللقطات إلى ترتيب واضح.',steps:['اختر أداة القص.','ضع رأس التشغيل عند اللحظة المطلوبة.','احذف الجزء الزائد ورتّب اللقطات.'],targets:[[2,14,18,15],[30,74,14,19],[59,79,35,15]],question:'ما الخطوة التي تسبق قص اللقطة عند لحظة محددة؟',options:['تغيير مستوى صوت المقطع','وضع رأس التشغيل عند موضع القص','إضافة انتقال إلى نهاية المشروع'],correct:1,explain:'رأس التشغيل يحدد الإطار المقصود. ثبّت موضعه قبل تنفيذ القص.'},
- {id:'transition',icon:'layers',title:'اختيار الانتقال البصري',art:5,objective:'يختار انتقالًا مناسبًا بين لقطتين ويضبط مدته.',prereq:'وجود لقطتين متجاورتين على الخط الزمني.',practice:'أضف انتقالًا بين لقطتين، وعاين نقطة الالتقاء قبل وبعد ضبط مدته.',steps:['افتح لوحة الانتقالات.','طبّق الانتقال عند التقاء اللقطتين.','عاين المشهد واضبط مدة الانتقال.'],targets:[[2,27,18,15],[26,77,21,17],[28,15,62,47]],question:'أين يوضع انتقال المزج بين لقطتين متجاورتين؟',options:['عند نقطة التقاء اللقطتين','على مسار الصوت وحده','في نهاية المشروع دائمًا'],correct:0,explain:'يوضع الانتقال على نقطة التقاء اللقطتين، ثم تُراجع مدته في المعاينة.'},
- {id:'audio',icon:'audio',title:'مزامنة الصوت مع الصورة',art:0,objective:'يحاذي بداية الصوت مع الحدث البصري ويفحص التزامن بالمعاينة.',prereq:'وجود مقطع فيديو ومسار صوت مستقل في المشروع.',practice:'حاذِ بداية مؤثر صوتي مع حدث بصري واضح، ثم شغّل الجزء قبل الحدث وبعده للتحقق.',steps:['حدد المسار الصوتي.','حاذِ الموجة مع اللحظة البصرية.','شغّل المقطع للتحقق من التزامن.'],targets:[[2,40,18,15],[9,88,44,9],[28,15,62,47]],question:'كيف تتحقق من مزامنة المؤثر الصوتي بعد محاذاته؟',options:['تحذف الصورة من الخط الزمني','تعتمد على طول المسار فقط','تشغّل الجزء المحيط بالحدث وتراجع الصوت والصورة معًا'],correct:2,explain:'المعاينة قبل الحدث وبعده تكشف أي تقدّم أو تأخّر في الصوت عن الصورة.'}
+ {id:'cut',icon:'cut',title:'القص وترتيب اللقطات',art:4,objective:'يحدد موضع القص ويعيد ترتيب ثلاث لقطات وفق تسلسل المشهد.',prereq:'معرفة كيفية استيراد المقاطع إلى الخط الزمني.',practice:'استورد ثلاث لقطات، واقطع الجزء الزائد من اللقطة الأولى، ثم اسحب اللقطات إلى ترتيب واضح.',steps:['اختر أداة القص.','ضع رأس التشغيل عند اللحظة المطلوبة.','احذف الجزء الزائد ورتّب اللقطات.'],targets:['#tool-cut','.ruler','#video-track'],question:'ما الخطوة التي تسبق قص اللقطة عند لحظة محددة؟',options:['تغيير مستوى صوت المقطع','وضع رأس التشغيل عند موضع القص','إضافة انتقال إلى نهاية المشروع'],correct:1,explain:'رأس التشغيل يحدد الإطار المقصود. ثبّت موضعه قبل تنفيذ القص.'},
+ {id:'transition',icon:'layers',title:'اختيار الانتقال البصري',art:5,objective:'يختار انتقالًا مناسبًا بين لقطتين ويضبط مدته.',prereq:'وجود لقطتين متجاورتين على الخط الزمني.',practice:'أضف انتقالًا بين لقطتين، وعاين نقطة الالتقاء قبل وبعد ضبط مدته.',steps:['افتح لوحة الانتقالات.','طبّق الانتقال عند التقاء اللقطتين.','عاين المشهد واضبط مدة الانتقال.'],targets:['#tool-layer','#transition-point','.ed-preview'],question:'أين يوضع انتقال المزج بين لقطتين متجاورتين؟',options:['عند نقطة التقاء اللقطتين','على مسار الصوت وحده','في نهاية المشروع دائمًا'],correct:0,explain:'يوضع الانتقال على نقطة التقاء اللقطتين، ثم تُراجع مدته في المعاينة.'},
+ {id:'audio',icon:'audio',title:'مزامنة الصوت مع الصورة',art:0,objective:'يحاذي بداية الصوت مع الحدث البصري ويفحص التزامن بالمعاينة.',prereq:'وجود مقطع فيديو ومسار صوت مستقل في المشروع.',practice:'حاذِ بداية مؤثر صوتي مع حدث بصري واضح، ثم شغّل الجزء قبل الحدث وبعده للتحقق.',steps:['حدد المسار الصوتي.','حاذِ الموجة مع اللحظة البصرية.','شغّل المقطع للتحقق من التزامن.'],targets:['#tool-audio','#audio-track','.ed-preview'],question:'كيف تتحقق من مزامنة المؤثر الصوتي بعد محاذاته؟',options:['تحذف الصورة من الخط الزمني','تعتمد على طول المسار فقط','تشغّل الجزء المحيط بالحدث وتراجع الصوت والصورة معًا'],correct:2,explain:'المعاينة قبل الحدث وبعده تكشف أي تقدّم أو تأخّر في الصوت عن الصورة.'}
 ];
 const $=id=>document.getElementById(id);
 const icon=id=>'<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-'+id+'"></use></svg>';
@@ -212,6 +231,15 @@ $('theme').addEventListener('click',()=>{
 let view='learn',filter='all',position=0,playing=false,frame=0,lastFrame=0,lastSaved=-1,toastTimer=0,videoTrigger=null;
 const stepCount=3,duration=60;
 const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)');
+const phoneLayout=matchMedia('(max-width:740px)');
+function placeCueSettings(){
+ const settings=$('cue-settings');
+ const focused=settings.contains(document.activeElement)?document.activeElement:null;
+ if(awaitingReveal.has(settings))finishReveal(settings,false);
+ if(phoneLayout.matches)$('lab').querySelector('.player-header').after(settings);
+ else $('learning-side').prepend(settings);
+ focused?.focus({preventScroll:true});
+}
 const revealTargets='.section-head,.player,.lesson-info,.task-card,.side > .card,.page-head,.library-bar,.media,.stat,.progress-panel';
 const awaitingReveal=new Set();
 const revealed=new WeakSet();
@@ -303,6 +331,26 @@ function setPosition(value, persist=false){
 }
 function rememberPosition(){state.positions[lessons[state.index].id]=Math.floor(position);save();}
 const displayed={second:-1,caption:'',cue:''};
+function alignCue(){
+ const cue=$('cue-marker');
+ if(cue.hidden)return;
+ const editor=$('editor');
+ const lesson=lessons[state.index];
+ const step=Math.min(stepCount-1,Math.floor(position/(duration/stepCount)));
+ const frame=editor.getBoundingClientRect();
+ if(!frame.width||!frame.height)return;
+ const target=editor.querySelector(lesson.targets[step]).getBoundingClientRect();
+ if(cue.dataset.mode==='advanced'){
+  const clearance=32;
+  cue.dataset.arrow=frame.right-target.right>=clearance?'right':target.left-frame.left>=clearance?'left':target.top-frame.top>=clearance?'top':'bottom';
+ }
+ cue.style.setProperty('--x',((target.left-frame.left-2)/frame.width*100)+'%');
+ cue.style.setProperty('--y',((target.top-frame.top-2)/frame.height*100)+'%');
+ cue.style.setProperty('--w',((target.width+4)/frame.width*100)+'%');
+ cue.style.setProperty('--h',((target.height+4)/frame.height*100)+'%');
+}
+if('ResizeObserver' in window)new ResizeObserver(alignCue).observe($('editor'));
+else window.addEventListener('resize',alignCue,{passive:true});
 function renderFrame(){
  const lesson=lessons[state.index];
  const step=Math.min(stepCount-1,Math.floor(position/(duration/stepCount)));
@@ -328,7 +376,7 @@ function renderFrame(){
   cue.hidden=mode==='none';
   if(!cue.hidden){
    cue.dataset.mode=mode;
-   lesson.targets[step].forEach((n,i)=>cue.style.setProperty(['--x','--y','--w','--h'][i],n+'%'));
+   alignCue();
   }
   displayed.cue=cueKey;
  }
@@ -465,6 +513,8 @@ function renderProgress(){
 const initialView=location.hash.slice(1);
 if(['library','progress'].includes(initialView))view=initialView;
 if(!reduceMotion.matches)$('learn').querySelector('.hero').classList.add('hero-intro');
+placeCueSettings();
+phoneLayout.addEventListener('change',placeCueSettings);
 showTheme();selectLesson(state.index);showView(view);
 </script>
 </body>
